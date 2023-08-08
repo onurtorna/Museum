@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10751D582A82D85D001DB36D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 10751D572A82D85D001DB36D /* Networking */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6233A2A818CBA008D1D2F /* ViewController.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233A2A818CBA008D1D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10751D582A82D85D001DB36D /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,12 +56,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10751D542A82D5DA001DB36D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				10751D552A82D678001DB36D /* Networking */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		10751D562A82D857001DB36D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		10A6232A2A818CB9008D1D2F = {
 			isa = PBXGroup;
 			children = (
+				10751D542A82D5DA001DB36D /* Networking */,
 				10A623352A818CBA008D1D2F /* Museum */,
 				10A6234C2A818CBC008D1D2F /* MuseumTests */,
 				10A623342A818CBA008D1D2F /* Products */,
+				10751D562A82D857001DB36D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +151,9 @@
 			dependencies = (
 			);
 			name = Museum;
+			packageProductDependencies = (
+				10751D572A82D85D001DB36D /* Networking */,
+			);
 			productName = Museum;
 			productReference = 10A623332A818CBA008D1D2F /* Museum.app */;
 			productType = "com.apple.product-type.application";
@@ -501,6 +524,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10751D572A82D85D001DB36D /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 10A6232B2A818CB9008D1D2F /* Project object */;
 }
