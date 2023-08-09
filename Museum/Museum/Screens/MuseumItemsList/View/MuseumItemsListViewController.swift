@@ -9,6 +9,10 @@ import UIKit
 
 final class MuseumItemsListViewController: UIViewController {
 
+    // MARK: - Internal variables
+
+    var presenter: MuseumItemsListPresentation?
+
     // MARK: - Private variables
 
     private lazy var collectionView: UICollectionView = makeCollectionView()
@@ -24,6 +28,12 @@ final class MuseumItemsListViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+// MARK: - MuseumItemsListViewable
+
+extension MuseumItemsListViewController: MuseumItemsListViewable {
+    // To be implemented
 }
 
 // MARK: - Helpers

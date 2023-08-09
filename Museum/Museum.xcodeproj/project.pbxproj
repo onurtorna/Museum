@@ -12,6 +12,13 @@
 		10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */; };
 		10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D602A842F7D001DB36D /* MuseumItemsListSection.swift */; };
 		10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */; };
+		10751D6A2A84351B001DB36D /* MuseumItemsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D692A84351B001DB36D /* MuseumItemsListPresenter.swift */; };
+		10751D6C2A843573001DB36D /* MuseumItemsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D6B2A843573001DB36D /* MuseumItemsListInteractor.swift */; };
+		10751D6E2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D6D2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift */; };
+		10751D702A8436FC001DB36D /* MuseumItemsListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D6F2A8436FC001DB36D /* MuseumItemsListViewable.swift */; };
+		10751D722A843767001DB36D /* MuseumItemsListPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D712A843767001DB36D /* MuseumItemsListPresentation.swift */; };
+		10751D742A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D732A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift */; };
+		10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D752A8437ED001DB36D /* MuseumItemsListBuilder.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6233A2A818CBA008D1D2F /* ViewController.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
@@ -35,6 +42,13 @@
 		10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCompositionalLayoutMaker.swift; sourceTree = "<group>"; };
 		10751D602A842F7D001DB36D /* MuseumItemsListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListSection.swift; sourceTree = "<group>"; };
 		10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutConstraints.swift"; sourceTree = "<group>"; };
+		10751D692A84351B001DB36D /* MuseumItemsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListPresenter.swift; sourceTree = "<group>"; };
+		10751D6B2A843573001DB36D /* MuseumItemsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListInteractor.swift; sourceTree = "<group>"; };
+		10751D6D2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		10751D6F2A8436FC001DB36D /* MuseumItemsListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewable.swift; sourceTree = "<group>"; };
+		10751D712A843767001DB36D /* MuseumItemsListPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListPresentation.swift; sourceTree = "<group>"; };
+		10751D732A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		10751D752A8437ED001DB36D /* MuseumItemsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListBuilder.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233A2A818CBA008D1D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,12 +93,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		10751D592A842D96001DB36D /* MuseumsItemList */ = {
+		10751D592A842D96001DB36D /* MuseumItemsList */ = {
 			isa = PBXGroup;
 			children = (
+				10751D682A843506001DB36D /* Builder */,
+				10751D662A8434CD001DB36D /* Interactor */,
+				10751D652A8434C3001DB36D /* Presenter */,
 				10751D5A2A842DA8001DB36D /* View */,
 			);
-			path = MuseumsItemList;
+			path = MuseumItemsList;
 			sourceTree = "<group>";
 		};
 		10751D5A2A842DA8001DB36D /* View */ = {
@@ -92,6 +109,7 @@
 			children = (
 				10751D5D2A842EE6001DB36D /* CollectionView */,
 				10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */,
+				10751D6F2A8436FC001DB36D /* MuseumItemsListViewable.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +129,33 @@
 				10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10751D652A8434C3001DB36D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				10751D692A84351B001DB36D /* MuseumItemsListPresenter.swift */,
+				10751D6D2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift */,
+				10751D712A843767001DB36D /* MuseumItemsListPresentation.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		10751D662A8434CD001DB36D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				10751D6B2A843573001DB36D /* MuseumItemsListInteractor.swift */,
+				10751D732A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		10751D682A843506001DB36D /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				10751D752A8437ED001DB36D /* MuseumItemsListBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		10A6232A2A818CB9008D1D2F = {
@@ -165,7 +210,7 @@
 		10A623672A819208008D1D2F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				10751D592A842D96001DB36D /* MuseumsItemList */,
+				10751D592A842D96001DB36D /* MuseumItemsList */,
 				10A6233A2A818CBA008D1D2F /* ViewController.swift */,
 			);
 			path = Screens;
@@ -283,11 +328,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */,
+				10751D722A843767001DB36D /* MuseumItemsListPresentation.swift in Sources */,
+				10751D742A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift in Sources */,
+				10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */,
 				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
 				10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */,
 				10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */,
 				10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */,
 				10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */,
+				10751D6E2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift in Sources */,
+				10751D702A8436FC001DB36D /* MuseumItemsListViewable.swift in Sources */,
+				10751D6A2A84351B001DB36D /* MuseumItemsListPresenter.swift in Sources */,
+				10751D6C2A843573001DB36D /* MuseumItemsListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
