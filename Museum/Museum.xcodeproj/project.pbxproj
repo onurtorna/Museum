@@ -23,6 +23,8 @@
 		10751D7C2A843D05001DB36D /* HeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7B2A843D05001DB36D /* HeaderImage.swift */; };
 		10751D7E2A843DDD001DB36D /* MuseumBaseURLHaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */; };
 		10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7F2A843E60001DB36D /* MuseumRequest.swift */; };
+		10751D832A843EF1001DB36D /* MuseumItemsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D822A843EF1001DB36D /* MuseumItemsListService.swift */; };
+		10751D852A843F03001DB36D /* MuseumItemsListServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D842A843F03001DB36D /* MuseumItemsListServing.swift */; };
 		10751D882A843F8A001DB36D /* GetMuseumItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D872A843F8A001DB36D /* GetMuseumItemsRequest.swift */; };
 		10751D8A2A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */; };
 		10751D8C2A843FE3001DB36D /* GetMuseumItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */; };
@@ -60,6 +62,8 @@
 		10751D7B2A843D05001DB36D /* HeaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImage.swift; sourceTree = "<group>"; };
 		10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumBaseURLHaving.swift; sourceTree = "<group>"; };
 		10751D7F2A843E60001DB36D /* MuseumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumRequest.swift; sourceTree = "<group>"; };
+		10751D822A843EF1001DB36D /* MuseumItemsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListService.swift; sourceTree = "<group>"; };
+		10751D842A843F03001DB36D /* MuseumItemsListServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListServing.swift; sourceTree = "<group>"; };
 		10751D872A843F8A001DB36D /* GetMuseumItemsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsRequest.swift; sourceTree = "<group>"; };
 		10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsRequestParameters.swift; sourceTree = "<group>"; };
 		10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsResponse.swift; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				10751D862A843F47001DB36D /* RequestAndResponse */,
+				10751D822A843EF1001DB36D /* MuseumItemsListService.swift */,
+				10751D842A843F03001DB36D /* MuseumItemsListServing.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -401,10 +407,12 @@
 				10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */,
 				10751D7C2A843D05001DB36D /* HeaderImage.swift in Sources */,
 				10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */,
+				10751D832A843EF1001DB36D /* MuseumItemsListService.swift in Sources */,
 				10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */,
 				10751D8E2A8443F1001DB36D /* Secret.swift in Sources */,
 				10751D6E2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift in Sources */,
 				10751D7A2A843CC0001DB36D /* ArtObject.swift in Sources */,
+				10751D882A843F8A001DB36D /* GetMuseumItemsRequest.swift in Sources */,
 				10751D702A8436FC001DB36D /* MuseumItemsListViewable.swift in Sources */,
 				10751D6A2A84351B001DB36D /* MuseumItemsListPresenter.swift in Sources */,
 				10751D6C2A843573001DB36D /* MuseumItemsListInteractor.swift in Sources */,

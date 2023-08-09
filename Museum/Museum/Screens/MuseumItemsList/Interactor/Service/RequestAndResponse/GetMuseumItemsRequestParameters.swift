@@ -8,5 +8,5 @@
 import Foundation
 
 struct GetMuseumItemsRequestParameters: Encodable {
-    let key: String
+    let key: String = Secret.apiKey
 }
