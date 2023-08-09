@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Networking
 
-public final class Networking {
+public final class Networking: NetworkProviding {
 
     // MARK: Lifecycle
 
