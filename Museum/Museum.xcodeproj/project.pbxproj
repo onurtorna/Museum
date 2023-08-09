@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		10751D582A82D85D001DB36D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 10751D572A82D85D001DB36D /* Networking */; };
+		10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */; };
+		10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */; };
+		10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D602A842F7D001DB36D /* MuseumItemsListSection.swift */; };
+		10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6233A2A818CBA008D1D2F /* ViewController.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
@@ -27,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutConstraints.swift"; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233A2A818CBA008D1D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +76,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		10751D622A8430F4001DB36D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		10A6232A2A818CB9008D1D2F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		10A623352A818CBA008D1D2F /* Museum */ = {
 			isa = PBXGroup;
 			children = (
+				10751D622A8430F4001DB36D /* Extensions */,
 				10A623682A819218008D1D2F /* AppDelegate */,
 				10A623672A819208008D1D2F /* Screens */,
 				10A623662A81909D008D1D2F /* SupportingFiles */,
@@ -238,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */,
 				10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */,
 				10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */,
 			);
