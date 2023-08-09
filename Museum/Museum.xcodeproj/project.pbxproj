@@ -23,6 +23,9 @@
 		10751D7C2A843D05001DB36D /* HeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7B2A843D05001DB36D /* HeaderImage.swift */; };
 		10751D7E2A843DDD001DB36D /* MuseumBaseURLHaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */; };
 		10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7F2A843E60001DB36D /* MuseumRequest.swift */; };
+		10751D882A843F8A001DB36D /* GetMuseumItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D872A843F8A001DB36D /* GetMuseumItemsRequest.swift */; };
+		10751D8A2A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */; };
+		10751D8C2A843FE3001DB36D /* GetMuseumItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
@@ -56,6 +59,9 @@
 		10751D7B2A843D05001DB36D /* HeaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImage.swift; sourceTree = "<group>"; };
 		10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumBaseURLHaving.swift; sourceTree = "<group>"; };
 		10751D7F2A843E60001DB36D /* MuseumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumRequest.swift; sourceTree = "<group>"; };
+		10751D872A843F8A001DB36D /* GetMuseumItemsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsRequest.swift; sourceTree = "<group>"; };
+		10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsRequestParameters.swift; sourceTree = "<group>"; };
+		10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsResponse.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233F2A818CBB008D1D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 		10751D662A8434CD001DB36D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				10751D812A843EE0001DB36D /* Service */,
 				10751D6B2A843573001DB36D /* MuseumItemsListInteractor.swift */,
 				10751D732A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift */,
 			);
@@ -181,6 +188,24 @@
 				10751D7B2A843D05001DB36D /* HeaderImage.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10751D812A843EE0001DB36D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				10751D862A843F47001DB36D /* RequestAndResponse */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		10751D862A843F47001DB36D /* RequestAndResponse */ = {
+			isa = PBXGroup;
+			children = (
+				10751D872A843F8A001DB36D /* GetMuseumItemsRequest.swift */,
+				10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */,
+				10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */,
+			);
+			path = RequestAndResponse;
 			sourceTree = "<group>";
 		};
 		10A6232A2A818CB9008D1D2F = {
@@ -353,11 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */,
+				10751D852A843F03001DB36D /* MuseumItemsListServing.swift in Sources */,
 				10751D722A843767001DB36D /* MuseumItemsListPresentation.swift in Sources */,
+				10751D8C2A843FE3001DB36D /* GetMuseumItemsResponse.swift in Sources */,
 				10751D742A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift in Sources */,
 				10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */,
 				10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */,
 				10751D7E2A843DDD001DB36D /* MuseumBaseURLHaving.swift in Sources */,
+				10751D8A2A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift in Sources */,
 				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
 				10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */,
 				10751D7C2A843D05001DB36D /* HeaderImage.swift in Sources */,
