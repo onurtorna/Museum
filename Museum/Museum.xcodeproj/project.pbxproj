@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewController.swift; sourceTree = "<group>"; };
 		10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCompositionalLayoutMaker.swift; sourceTree = "<group>"; };
 		10751D602A842F7D001DB36D /* MuseumItemsListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListSection.swift; sourceTree = "<group>"; };
 		10751D632A843100001DB36D /* UIView+LayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutConstraints.swift"; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				10751D5D2A842EE6001DB36D /* CollectionView */,
+				10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */,
+				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
 				10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */,
 				10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */,
 				10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */,
