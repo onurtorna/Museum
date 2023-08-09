@@ -20,7 +20,6 @@
 		10751D742A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D732A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift */; };
 		10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D752A8437ED001DB36D /* MuseumItemsListBuilder.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
-		10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6233A2A818CBA008D1D2F /* ViewController.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
 		10A6234E2A818CBC008D1D2F /* MuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6234D2A818CBC008D1D2F /* MuseumTests.swift */; };
@@ -51,7 +50,6 @@
 		10751D752A8437ED001DB36D /* MuseumItemsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListBuilder.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10A6233A2A818CBA008D1D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10A6233F2A818CBB008D1D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A623422A818CBB008D1D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A623442A818CBB008D1D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				10751D592A842D96001DB36D /* MuseumItemsList */,
-				10A6233A2A818CBA008D1D2F /* ViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 				10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */,
 				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
 				10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */,
-				10A6233B2A818CBA008D1D2F /* ViewController.swift in Sources */,
 				10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */,
 				10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */,
 				10751D6E2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift in Sources */,
