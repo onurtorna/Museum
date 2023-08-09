@@ -22,6 +22,7 @@
 		10751D7A2A843CC0001DB36D /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D792A843CC0001DB36D /* ArtObject.swift */; };
 		10751D7C2A843D05001DB36D /* HeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7B2A843D05001DB36D /* HeaderImage.swift */; };
 		10751D7E2A843DDD001DB36D /* MuseumBaseURLHaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */; };
+		10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D7F2A843E60001DB36D /* MuseumRequest.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 		10751D792A843CC0001DB36D /* ArtObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObject.swift; sourceTree = "<group>"; };
 		10751D7B2A843D05001DB36D /* HeaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImage.swift; sourceTree = "<group>"; };
 		10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumBaseURLHaving.swift; sourceTree = "<group>"; };
+		10751D7F2A843E60001DB36D /* MuseumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumRequest.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233F2A818CBB008D1D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				10751D782A843CB5001DB36D /* Models */,
 				10751D7D2A843DDD001DB36D /* MuseumBaseURLHaving.swift */,
+				10751D7F2A843E60001DB36D /* MuseumRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */,
 				10751D722A843767001DB36D /* MuseumItemsListPresentation.swift in Sources */,
 				10751D742A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift in Sources */,
+				10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */,
 				10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */,
 				10751D7E2A843DDD001DB36D /* MuseumBaseURLHaving.swift in Sources */,
 				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
