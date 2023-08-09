@@ -30,11 +30,21 @@ final class MuseumItemsListPresenter {
 // MARK: - MuseumItemsListPresentation
 
 extension MuseumItemsListPresenter: MuseumItemsListPresentation {
-    // To be implemented
+    func load() {
+        interactor.getMuseumItems()
+    }
 }
 
 // MARK: - MuseumItemsListInteractorOutputProtocol
 
 extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
-    // To be implemented
+    @MainActor
+    func gotMuseumItems(items: [ArtObject]) {
+        // To be implemented
+    }
+
+    @MainActor
+    func getMuseumItemsFailed(errorMessage: String) {
+        // To be implemented
+    }
 }

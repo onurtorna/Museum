@@ -8,5 +8,9 @@
 import Foundation
 
 protocol MuseumItemsListInteractorOutputProtocol: AnyObject {
-    // To be implemented
+    @MainActor
+    func gotMuseumItems(items: [ArtObject])
+
+    @MainActor
+    func getMuseumItemsFailed(errorMessage: String)
 }

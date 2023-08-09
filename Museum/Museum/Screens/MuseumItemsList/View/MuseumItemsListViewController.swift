@@ -11,7 +11,11 @@ final class MuseumItemsListViewController: UIViewController {
 
     // MARK: - Internal variables
 
-    var presenter: MuseumItemsListPresentation?
+    var presenter: MuseumItemsListPresentation? {
+        didSet {
+            presenter?.load()
+        }
+    }
 
     // MARK: - Private variables
 

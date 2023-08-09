@@ -8,5 +8,5 @@
 // MARK: - MuseumItemsListPresentation
 
 protocol MuseumItemsListPresentation: AnyObject {
-    // To be implemented:
+    func load()
 }

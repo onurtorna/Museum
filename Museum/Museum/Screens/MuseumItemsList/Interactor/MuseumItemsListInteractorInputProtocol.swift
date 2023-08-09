@@ -8,5 +8,5 @@
 // MARK: - MuseumItemsListInteractorInputProtocol
 
 protocol MuseumItemsListInteractorInputProtocol: AnyObject {
-    // To be implemented
+    func getMuseumItems()
 }
