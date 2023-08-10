@@ -17,6 +17,7 @@ enum MuseumItemsListBuilder {
         )
         interactor.output = presenter
         view.presenter = presenter
+        view.title = "Museum Items"
         return view
     }
 }
