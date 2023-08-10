@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HeaderImage: Decodable {
+struct ImageEntity: Decodable {
     let url: URL
     let width: Int
     let height: Int

@@ -11,5 +11,19 @@ struct ArtObject: Decodable {
     let id: String
     let title: String
     let longTitle: String
-    let headerImage: HeaderImage
+    let principalOrFirstMaker: String
+    let headerImage: ImageEntity
+    let webImage: ImageEntity
+}
+
+// MARK: - Hashable
+
+extension ArtObject: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func == (lhs: ArtObject, rhs: ArtObject) -> Bool {
+        lhs.id == rhs.id
+    }
 }
