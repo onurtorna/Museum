@@ -29,6 +29,8 @@
 		10751D8A2A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */; };
 		10751D8C2A843FE3001DB36D /* GetMuseumItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */; };
 		10751D8E2A8443F1001DB36D /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D8D2A8443F1001DB36D /* Secret.swift */; };
+		10751D982A85725F001DB36D /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D972A85725F001DB36D /* Spacing.swift */; };
+		10751D9A2A857287001DB36D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D992A857287001DB36D /* Font.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
@@ -68,6 +70,8 @@
 		10751D892A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsRequestParameters.swift; sourceTree = "<group>"; };
 		10751D8B2A843FE3001DB36D /* GetMuseumItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemsResponse.swift; sourceTree = "<group>"; };
 		10751D8D2A8443F1001DB36D /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		10751D972A85725F001DB36D /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		10751D992A857287001DB36D /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233F2A818CBB008D1D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +229,23 @@
 			path = Secret;
 			sourceTree = "<group>";
 		};
+		10751D952A857240001DB36D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				10751D962A85724D001DB36D /* DesignKit */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		10751D962A85724D001DB36D /* DesignKit */ = {
+			isa = PBXGroup;
+			children = (
+				10751D992A857287001DB36D /* Font.swift */,
+				10751D972A85725F001DB36D /* Spacing.swift */,
+			);
+			path = DesignKit;
+			sourceTree = "<group>";
+		};
 		10A6232A2A818CB9008D1D2F = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +274,7 @@
 				10751D772A843BE2001DB36D /* Network */,
 				10A623672A819208008D1D2F /* Screens */,
 				10A623662A81909D008D1D2F /* SupportingFiles */,
+				10751D952A857240001DB36D /* Utilities */,
 			);
 			path = Museum;
 			sourceTree = "<group>";
@@ -412,8 +434,10 @@
 				10751D8E2A8443F1001DB36D /* Secret.swift in Sources */,
 				10751D6E2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift in Sources */,
 				10751D7A2A843CC0001DB36D /* ArtObject.swift in Sources */,
+				10751D9A2A857287001DB36D /* Font.swift in Sources */,
 				10751D882A843F8A001DB36D /* GetMuseumItemsRequest.swift in Sources */,
 				10751D702A8436FC001DB36D /* MuseumItemsListViewable.swift in Sources */,
+				10751D982A85725F001DB36D /* Spacing.swift in Sources */,
 				10751D6A2A84351B001DB36D /* MuseumItemsListPresenter.swift in Sources */,
 				10751D6C2A843573001DB36D /* MuseumItemsListInteractor.swift in Sources */,
 			);
