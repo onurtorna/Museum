@@ -131,6 +131,15 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		105032F72A85A7C400276CF5 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				10751D9B2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift */,
+				105032EF2A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		10751D542A82D5DA001DB36D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,9 +275,8 @@
 		10751D922A856F6E001DB36D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				105032F72A85A7C400276CF5 /* Configuration */,
 				10751D932A856F86001DB36D /* MuseumItemCollectionViewCell.swift */,
-				10751D9B2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift */,
-				105032EF2A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
