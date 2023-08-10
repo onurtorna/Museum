@@ -31,6 +31,7 @@ final class MuseumItemsListPresenter {
 
 extension MuseumItemsListPresenter: MuseumItemsListPresentation {
     func load() {
+        // TODO: Show loading view
         interactor.getMuseumItems()
     }
 }
@@ -40,11 +41,13 @@ extension MuseumItemsListPresenter: MuseumItemsListPresentation {
 extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     @MainActor
     func gotMuseumItems(items: [ArtObject]) {
-        // To be implemented
+        // TODO: Hide loading view
+        view?.applySnapshot(items: items)
     }
 
     @MainActor
     func getMuseumItemsFailed(errorMessage: String) {
+        // TODO: Hide loading view
         // To be implemented
     }
 }

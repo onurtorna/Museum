@@ -20,12 +20,17 @@ final class MuseumItemsListViewController: UIViewController {
     // MARK: - Private variables
 
     private lazy var collectionView: UICollectionView = makeCollectionView()
+    private let dataSource: MuseumItemsListCollectionViewDataSourcing
 
     // MARK: - Initialisers
 
-    init() {
+    init(
+        dataSource: MuseumItemsListCollectionViewDataSourcing = MuseumItemsListCollectionViewDataSource()
+    ) {
+        self.dataSource = dataSource
         super.init(nibName: nil, bundle: nil)
         setUp()
+        dataSource.configureDataSource(for: collectionView)
     }
 
     @available(*, unavailable)
@@ -37,7 +42,9 @@ final class MuseumItemsListViewController: UIViewController {
 // MARK: - MuseumItemsListViewable
 
 extension MuseumItemsListViewController: MuseumItemsListViewable {
-    // To be implemented
+    func applySnapshot(items: [ArtObject]) {
+        dataSource.applySnapshot(items: items)
+    }
 }
 
 // MARK: - Helpers

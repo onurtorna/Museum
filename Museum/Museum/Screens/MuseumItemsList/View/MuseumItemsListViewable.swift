@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MuseumItemsListViewable: AnyObject {
-    // To be implemented
+    func applySnapshot(items: [ArtObject])
 }
