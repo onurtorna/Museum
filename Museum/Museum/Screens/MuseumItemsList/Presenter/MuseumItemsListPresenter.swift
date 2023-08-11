@@ -43,8 +43,7 @@ final class MuseumItemsListPresenter {
 extension MuseumItemsListPresenter: MuseumItemsListPresentation {
     func load() {
         // TODO: Show loading view
-        isActivelyFetchingItems = true
-        interactor.getMuseumItems(pageNumber: currentPage)
+        fetchMuseumItems()
     }
 }
 
@@ -64,7 +63,9 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     func getMuseumItemsFailed(errorMessage: String) {
         // TODO: Hide loading view
         isActivelyFetchingItems = false
-        // To be implemented
+        router.showError(description: errorMessage) { [weak self] in
+            self?.fetchMuseumItems()
+        }
     }
 }
 
@@ -76,8 +77,16 @@ extension MuseumItemsListPresenter {
               shownItems < totalItems else {
             return
         }
-        isActivelyFetchingItems = true
         currentPage += 1
+        fetchMuseumItems()
+    }
+}
+
+// MARK: - Helpers
+
+extension MuseumItemsListPresenter {
+    private func fetchMuseumItems() {
+        isActivelyFetchingItems = true
         interactor.getMuseumItems(pageNumber: currentPage)
     }
 }
