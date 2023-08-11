@@ -7,12 +7,14 @@
 
 import UIKit
 
+// MARK: - Typealiases
+
+typealias AlertAction = (() -> Void)?
+
+// MARK: - AlertFactory
+
 /// Creates alert view controllers
 enum AlertFactory {
-
-    // MARK: - Typealiases
-
-    typealias AlertAction = (() -> Void)?
 
     // MARK: - Internal functions
 
