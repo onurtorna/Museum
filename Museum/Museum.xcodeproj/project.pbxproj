@@ -11,7 +11,10 @@
 		105032F02A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105032EF2A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift */; };
 		105032F32A85974A00276CF5 /* MuseumItemsListCollectionViewDataSourcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105032F22A85974A00276CF5 /* MuseumItemsListCollectionViewDataSourcing.swift */; };
 		105032F62A859AD000276CF5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 105032F52A859AD000276CF5 /* Kingfisher */; };
+		105032F92A85A81600276CF5 /* MuseumItemCollectionViewCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105032F82A85A81600276CF5 /* MuseumItemCollectionViewCellInteractor.swift */; };
 		105033012A86C47200276CF5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033002A86C47200276CF5 /* Image.swift */; };
+		105033042A86C52800276CF5 /* MuseumItemCollectionViewCellInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033032A86C52800276CF5 /* MuseumItemCollectionViewCellInteractorOutputProtocol.swift */; };
+		105033062A86C55900276CF5 /* MuseumItemCollectionViewCellInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033052A86C55900276CF5 /* MuseumItemCollectionViewCellInteractorInputProtocol.swift */; };
 		10751D582A82D85D001DB36D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 10751D572A82D85D001DB36D /* Networking */; };
 		10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */; };
 		10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */; };
@@ -59,7 +62,10 @@
 		105032ED2A85936400276CF5 /* MuseumItemsListSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListSectionHeaderView.swift; sourceTree = "<group>"; };
 		105032EF2A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemCollectionViewCellConfiguration.swift; sourceTree = "<group>"; };
 		105032F22A85974A00276CF5 /* MuseumItemsListCollectionViewDataSourcing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCollectionViewDataSourcing.swift; sourceTree = "<group>"; };
+		105032F82A85A81600276CF5 /* MuseumItemCollectionViewCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemCollectionViewCellInteractor.swift; sourceTree = "<group>"; };
 		105033002A86C47200276CF5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		105033032A86C52800276CF5 /* MuseumItemCollectionViewCellInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemCollectionViewCellInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		105033052A86C55900276CF5 /* MuseumItemCollectionViewCellInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemCollectionViewCellInteractorInputProtocol.swift; sourceTree = "<group>"; };
 		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewController.swift; sourceTree = "<group>"; };
 		10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCompositionalLayoutMaker.swift; sourceTree = "<group>"; };
@@ -140,6 +146,16 @@
 				105032EF2A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		105033022A86C51500276CF5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				105032F82A85A81600276CF5 /* MuseumItemCollectionViewCellInteractor.swift */,
+				105033052A86C55900276CF5 /* MuseumItemCollectionViewCellInteractorInputProtocol.swift */,
+				105033032A86C52800276CF5 /* MuseumItemCollectionViewCellInteractorOutputProtocol.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		10751D542A82D5DA001DB36D /* Networking */ = {
@@ -277,8 +293,9 @@
 		10751D922A856F6E001DB36D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				105032F72A85A7C400276CF5 /* Configuration */,
 				10751D932A856F86001DB36D /* MuseumItemCollectionViewCell.swift */,
+				105032F72A85A7C400276CF5 /* Configuration */,
+				105033022A86C51500276CF5 /* Interactor */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -484,6 +501,7 @@
 				10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */,
 				10751D912A856E30001DB36D /* MuseumItemsListCollectionViewDataSource.swift in Sources */,
 				10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */,
+				105033042A86C52800276CF5 /* MuseumItemCollectionViewCellInteractorOutputProtocol.swift in Sources */,
 				105033012A86C47200276CF5 /* Image.swift in Sources */,
 				105032F02A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift in Sources */,
 				105032EE2A85936400276CF5 /* MuseumItemsListSectionHeaderView.swift in Sources */,
@@ -491,9 +509,11 @@
 				10751D8A2A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift in Sources */,
 				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
 				10751D9C2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift in Sources */,
+				105033062A86C55900276CF5 /* MuseumItemCollectionViewCellInteractorInputProtocol.swift in Sources */,
 				10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */,
 				10751D7C2A843D05001DB36D /* ImageEntity.swift in Sources */,
 				10751D612A842F7D001DB36D /* MuseumItemsListSection.swift in Sources */,
+				105032F92A85A81600276CF5 /* MuseumItemCollectionViewCellInteractor.swift in Sources */,
 				10751D832A843EF1001DB36D /* MuseumItemsListService.swift in Sources */,
 				10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */,
 				10751D8E2A8443F1001DB36D /* Secret.swift in Sources */,
