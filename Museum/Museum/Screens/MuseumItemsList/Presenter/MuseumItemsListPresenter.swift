@@ -51,3 +51,11 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
         // To be implemented
     }
 }
+
+// MARK: - MuseumItemsListCollectionViewDataSourceDelegate
+
+extension MuseumItemsListPresenter {
+    func paginationRequested() {
+        // To be implemented:
+    }
+}

@@ -14,6 +14,7 @@ final class MuseumItemsListViewController: UIViewController {
     var presenter: MuseumItemsListPresentation? {
         didSet {
             presenter?.load()
+            dataSource.setDelegate(presenter)
         }
     }
 

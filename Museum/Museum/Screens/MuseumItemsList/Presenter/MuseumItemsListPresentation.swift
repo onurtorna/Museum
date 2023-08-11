@@ -7,6 +7,6 @@
 
 // MARK: - MuseumItemsListPresentation
 
-protocol MuseumItemsListPresentation: AnyObject {
+protocol MuseumItemsListPresentation: AnyObject, MuseumItemsListCollectionViewDataSourceDelegate {
     func load()
 }

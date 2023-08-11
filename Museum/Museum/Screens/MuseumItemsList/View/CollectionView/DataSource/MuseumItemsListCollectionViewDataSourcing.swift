@@ -10,4 +10,5 @@ import UIKit
 protocol MuseumItemsListCollectionViewDataSourcing {
     func configureDataSource(for collectionView: UICollectionView)
     func applySnapshot(items: [ArtObject])
+    func setDelegate(_ delegate: MuseumItemsListCollectionViewDataSourceDelegate?)
 }

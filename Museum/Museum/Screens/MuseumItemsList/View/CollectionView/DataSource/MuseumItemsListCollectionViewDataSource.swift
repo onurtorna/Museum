@@ -34,6 +34,7 @@ final class MuseumItemsListCollectionViewDataSource {
 
     private var dataSource: DataSource?
     private var dataSourceCollectionView: UICollectionView?
+    weak var delegate: MuseumItemsListCollectionViewDataSourceDelegate?
 }
 
 // MARK: - MuseumItemsListCollectionViewDataSourcing
@@ -49,6 +50,10 @@ extension MuseumItemsListCollectionViewDataSource: MuseumItemsListCollectionView
         snapshot.appendSections([.artObjects])
         snapshot.appendItems(items, toSection: .artObjects)
         dataSource?.apply(snapshot, animatingDifferences: true)
+    }
+
+    func setDelegate(_ delegate: MuseumItemsListCollectionViewDataSourceDelegate?) {
+        self.delegate = delegate
     }
 }
 
@@ -87,11 +92,13 @@ extension MuseumItemsListCollectionViewDataSource {
     // MARK: - Cell Registration
 
     private func makeMuseumItemCellRegistration() -> MuseumItemCellRegistration {
-        .init(handler: { cell, _, item in
+        .init(handler: { [weak self] cell, indexPath, item in
             let interactor = MuseumItemCollectionViewCellInteractor()
             interactor.output = cell
             cell.interactor = interactor
             cell.configure(with: item)
+
+            self?.checkForPaginationRequest(itemIndex: indexPath.row)
         })
     }
 
@@ -101,5 +108,16 @@ extension MuseumItemsListCollectionViewDataSource {
             handler: { _, _, _ in
                 // Left blank intentionally, no customisation needed for this header
             })
+    }
+}
+
+// MARK: - Pagination
+
+extension MuseumItemsListCollectionViewDataSource {
+    private func checkForPaginationRequest(itemIndex: Int) {
+        guard dataSource?.snapshot().numberOfItems(inSection: .artObjects) == itemIndex + 1 else {
+            return
+        }
+        delegate?.paginationRequested()
     }
 }
