@@ -88,6 +88,9 @@ extension MuseumItemsListCollectionViewDataSource {
 
     private func makeMuseumItemCellRegistration() -> MuseumItemCellRegistration {
         .init(handler: { cell, _, item in
+            let interactor = MuseumItemCollectionViewCellInteractor()
+            interactor.output = cell
+            cell.interactor = interactor
             cell.configure(with: item)
         })
     }

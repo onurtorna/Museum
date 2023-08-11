@@ -9,6 +9,10 @@ import UIKit
 
 final class MuseumItemCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - Internal variables
+
+    var interactor: MuseumItemCollectionViewCellInteractorInputProtocol?
+
     // MARK: - Private variables
 
     private lazy var imageView: UIImageView = {
@@ -36,7 +40,12 @@ final class MuseumItemCollectionViewCell: UICollectionViewCell {
         stackView.axis = .vertical
         stackView.spacing = Spacing.xSmall
         stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.directionalLayoutMargins.bottom = Spacing.xSmall
+        stackView.directionalLayoutMargins = .init(
+            top: 0,
+            leading: Spacing.xSmall,
+            bottom: Spacing.xSmall,
+            trailing: Spacing.xSmall
+        )
         return stackView
     }()
 
@@ -57,6 +66,21 @@ final class MuseumItemCollectionViewCell: UICollectionViewCell {
     func configure(with configuration: MuseumItemCollectionViewCellConfiguration) {
         titleLabel.text = configuration.title
         artistNameLabel.text = configuration.artistName
+        interactor?.downloadImage(url: configuration.imageURL)
+    }
+}
+
+// MARK: - MuseumItemCollectionViewCellInteractorOutputProtocol
+
+extension MuseumItemCollectionViewCell: MuseumItemCollectionViewCellInteractorOutputProtocol {
+    @MainActor
+    func didReceiveImage(image: UIImage) {
+        imageView.image = image
+    }
+
+    @MainActor
+    func didFailImage() {
+        imageView.image = UIImage(named: "artPlaceholder")
     }
 }
 
