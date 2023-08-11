@@ -11,9 +11,11 @@ enum MuseumItemsListBuilder {
     static func build() -> MuseumItemsListViewController {
         let view = MuseumItemsListViewController()
         let interactor = MuseumItemsListInteractor()
+        let router = MuseumItemsListRouter(viewController: view)
         let presenter = MuseumItemsListPresenter(
             view: view,
-            interactor: interactor
+            interactor: interactor,
+            router: router
         )
         interactor.output = presenter
         view.presenter = presenter

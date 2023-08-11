@@ -15,6 +15,7 @@ final class MuseumItemsListPresenter {
 
     private weak var view: MuseumItemsListViewable?
     private let interactor: MuseumItemsListInteractorInputProtocol
+    private let router: MuseumItemsListRouting
 
     // MARK: Pagination related variables
 
@@ -28,10 +29,12 @@ final class MuseumItemsListPresenter {
 
     init(
         view: MuseumItemsListViewable,
-        interactor: MuseumItemsListInteractorInputProtocol
+        interactor: MuseumItemsListInteractorInputProtocol,
+        router: MuseumItemsListRouting
     ) {
         self.view = view
         self.interactor = interactor
+        self.router = router
     }
 }
 
