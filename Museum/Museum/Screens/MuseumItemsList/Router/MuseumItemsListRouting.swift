@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol MuseumItemsListRouting: AnyObject {
-    // To be implemented: 
+protocol MuseumItemsListRouting: AnyObject, ErrorShowing {
+    // To be implemented:
 }
