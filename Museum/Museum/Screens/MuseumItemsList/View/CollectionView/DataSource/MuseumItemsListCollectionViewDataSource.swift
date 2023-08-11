@@ -46,8 +46,7 @@ extension MuseumItemsListCollectionViewDataSource: MuseumItemsListCollectionView
     }
 
     func applySnapshot(items: [ArtObject]) {
-        var snapshot = Snapshot()
-        snapshot.appendSections([.artObjects])
+        var snapshot = dataSource?.snapshot() ?? makeDefaultSnapshot()
         snapshot.appendItems(items, toSection: .artObjects)
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
@@ -74,6 +73,7 @@ extension MuseumItemsListCollectionViewDataSource {
                 item: item
             )
         }
+        dataSource?.apply(makeDefaultSnapshot(), animatingDifferences: false)
         setUpSupplementaryViewProvider()
     }
 
@@ -87,6 +87,12 @@ extension MuseumItemsListCollectionViewDataSource {
                 for: indexPath
             )
         }
+    }
+
+    private func makeDefaultSnapshot() -> Snapshot {
+        var snapshot = Snapshot()
+        snapshot.appendSections([.artObjects])
+        return snapshot
     }
 
     // MARK: - Cell Registration
@@ -115,7 +121,7 @@ extension MuseumItemsListCollectionViewDataSource {
 
 extension MuseumItemsListCollectionViewDataSource {
     private func checkForPaginationRequest(itemIndex: Int) {
-        guard dataSource?.snapshot().numberOfItems(inSection: .artObjects) == itemIndex + 1 else {
+        guard dataSource?.snapshot().numberOfItems(inSection: .artObjects) == itemIndex + 3 else {
             return
         }
         delegate?.paginationRequested()

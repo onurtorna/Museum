@@ -31,12 +31,12 @@ final class MuseumItemsListInteractor {
 // MARK: - MuseumItemsListInteractorInputProtocol
 
 extension MuseumItemsListInteractor: MuseumItemsListInteractorInputProtocol {
-    func getMuseumItems() {
+    func getMuseumItems(pageNumber: Int) {
         Task {
-            let result = await service.getMuseumItems()
+            let result = await service.getMuseumItems(pageNumber: pageNumber)
             switch result {
             case .success(let response):
-                await output?.gotMuseumItems(items: response.artObjects)
+                await output?.gotMuseumItems(items: response.artObjects, totalItemCount: response.count)
 
             case .failure(let error):
                 await output?.getMuseumItemsFailed(errorMessage: error.localizedDescription)

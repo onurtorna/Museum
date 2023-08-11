@@ -8,5 +8,5 @@
 // MARK: - MuseumItemsListInteractorInputProtocol
 
 protocol MuseumItemsListInteractorInputProtocol: AnyObject {
-    func getMuseumItems()
+    func getMuseumItems(pageNumber: Int)
 }

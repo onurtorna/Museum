@@ -9,5 +9,5 @@ import Networking
 
 protocol MuseumItemsListServing: AnyObject {
     /// Returns museum items as list or a network error in failure case
-    func getMuseumItems() async -> Result<GetMuseumItemsResponse, NetworkError>
+    func getMuseumItems(pageNumber: Int) async -> Result<GetMuseumItemsResponse, NetworkError>
 }

@@ -16,6 +16,14 @@ final class MuseumItemsListPresenter {
     private weak var view: MuseumItemsListViewable?
     private let interactor: MuseumItemsListInteractorInputProtocol
 
+    // MARK: Pagination related variables
+
+    private var shownItems = 0
+    private var totalItems = 0
+    private var currentPage = 1
+    // Prevents pagination to fetch again while actively fetching items
+    private var isActivelyFetchingItems = false
+
     // MARK: - Initialiser
 
     init(
@@ -32,7 +40,8 @@ final class MuseumItemsListPresenter {
 extension MuseumItemsListPresenter: MuseumItemsListPresentation {
     func load() {
         // TODO: Show loading view
-        interactor.getMuseumItems()
+        isActivelyFetchingItems = true
+        interactor.getMuseumItems(pageNumber: currentPage)
     }
 }
 
@@ -40,14 +49,18 @@ extension MuseumItemsListPresenter: MuseumItemsListPresentation {
 
 extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     @MainActor
-    func gotMuseumItems(items: [ArtObject]) {
+    func gotMuseumItems(items: [ArtObject], totalItemCount: Int) {
         // TODO: Hide loading view
+        isActivelyFetchingItems = false
+        totalItems = totalItemCount
+        shownItems += items.count
         view?.applySnapshot(items: items)
     }
 
     @MainActor
     func getMuseumItemsFailed(errorMessage: String) {
         // TODO: Hide loading view
+        isActivelyFetchingItems = false
         // To be implemented
     }
 }
@@ -56,6 +69,12 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
 
 extension MuseumItemsListPresenter {
     func paginationRequested() {
-        // To be implemented:
+        guard !isActivelyFetchingItems,
+              shownItems < totalItems else {
+            return
+        }
+        isActivelyFetchingItems = true
+        currentPage += 1
+        interactor.getMuseumItems(pageNumber: currentPage)
     }
 }

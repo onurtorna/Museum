@@ -21,8 +21,8 @@ final class MuseumItemsListService: MuseumItemsListServing {
 
     // MARK: - Internal function
 
-    func getMuseumItems() async -> Result<GetMuseumItemsResponse, NetworkError> {
-        let parameters = GetMuseumItemsRequestParameters()
+    func getMuseumItems(pageNumber: Int) async -> Result<GetMuseumItemsResponse, NetworkError> {
+        let parameters = GetMuseumItemsRequestParameters(pageNumber: pageNumber)
         let request = GetMuseumItemsRequest(parameters: parameters)
         return await networking.request(
             requestable: request,
