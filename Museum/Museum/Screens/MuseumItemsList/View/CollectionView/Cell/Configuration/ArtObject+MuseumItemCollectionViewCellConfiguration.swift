@@ -9,7 +9,7 @@ import Foundation
 
 extension ArtObject: MuseumItemCollectionViewCellConfiguration {
     var imageURL: URL {
-        webImage.url
+        headerImage.url
     }
 
     var artistName: String {
