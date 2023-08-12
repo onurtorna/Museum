@@ -9,4 +9,5 @@
 
 protocol MuseumItemsListPresentation: AnyObject, MuseumItemsListCollectionViewDataSourceDelegate {
     func load()
+    func fetchMuseumItems(showLoading: Bool)
 }

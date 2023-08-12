@@ -46,6 +46,16 @@ extension MuseumItemsListViewController: MuseumItemsListViewable {
     func applySnapshot(items: [ArtObject]) {
         dataSource.applySnapshot(items: items)
     }
+
+    func showRefreshButton() {
+        let refreshAction = UIAction { [weak self] _ in
+            self?.presenter?.fetchMuseumItems(showLoading: true)
+            self?.navigationItem.rightBarButtonItem = nil
+        }
+        let refreshButton = UIBarButtonItem(systemItem: .refresh, primaryAction: refreshAction)
+        refreshButton.tintColor = .black
+        navigationItem.rightBarButtonItem = refreshButton
+    }
 }
 
 // MARK: - Helpers

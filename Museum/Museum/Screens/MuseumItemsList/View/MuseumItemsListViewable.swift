@@ -9,4 +9,5 @@ import Foundation
 
 protocol MuseumItemsListViewable: AnyObject {
     func applySnapshot(items: [ArtObject])
+    func showRefreshButton()
 }
