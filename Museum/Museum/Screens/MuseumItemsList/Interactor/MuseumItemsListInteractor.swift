@@ -39,7 +39,7 @@ extension MuseumItemsListInteractor: MuseumItemsListInteractorInputProtocol {
                 await output?.gotMuseumItems(items: response.artObjects, totalItemCount: response.count)
 
             case .failure(let error):
-                await output?.getMuseumItemsFailed(errorMessage: error.localizedDescription)
+                await output?.getMuseumItemsFailed(errorMessage: error.message)
             }
         }
     }
