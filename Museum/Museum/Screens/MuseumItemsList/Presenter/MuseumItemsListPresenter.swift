@@ -42,7 +42,7 @@ final class MuseumItemsListPresenter {
 
 extension MuseumItemsListPresenter: MuseumItemsListPresentation {
     func load() {
-        // TODO: Show loading view
+        router.showLoadingView()
         fetchMuseumItems()
     }
 }
@@ -52,7 +52,7 @@ extension MuseumItemsListPresenter: MuseumItemsListPresentation {
 extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     @MainActor
     func gotMuseumItems(items: [ArtObject], totalItemCount: Int) {
-        // TODO: Hide loading view
+        router.hideLoadingView()
         isActivelyFetchingItems = false
         totalItems = totalItemCount
         shownItems += items.count
@@ -61,9 +61,10 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
 
     @MainActor
     func getMuseumItemsFailed(errorMessage: String) {
-        // TODO: Hide loading view
+        router.hideLoadingView()
         isActivelyFetchingItems = false
         router.showError(description: errorMessage) { [weak self] in
+            self?.router.showLoadingView()
             self?.fetchMuseumItems()
         }
     }
