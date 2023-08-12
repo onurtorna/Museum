@@ -74,10 +74,8 @@ extension AlertFactory {
 
 extension AlertFactory {
     private enum Constant {
-        static let errorAlertTitle = "Error!"
+        static let errorAlertTitle = "Something went wrong.."
         static let okButtonTitle = "OK"
         static let retryButtonTitle = "Retry"
     }
-
-
 }
