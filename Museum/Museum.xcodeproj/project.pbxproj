@@ -23,6 +23,7 @@
 		105033202A86DC0900276CF5 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050331F2A86DC0900276CF5 /* LoadingViewController.swift */; };
 		105033242A87B2DD00276CF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033232A87B2DD00276CF5 /* Router.swift */; };
 		105033272A87B38300276CF5 /* LoadingViewShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033262A87B38300276CF5 /* LoadingViewShowing.swift */; };
+		1050332A2A87BFA500276CF5 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033292A87BFA500276CF5 /* Pagination.swift */; };
 		10751D582A82D85D001DB36D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 10751D572A82D85D001DB36D /* Networking */; };
 		10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */; };
 		10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */; };
@@ -82,6 +83,7 @@
 		1050331F2A86DC0900276CF5 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		105033232A87B2DD00276CF5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		105033262A87B38300276CF5 /* LoadingViewShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewShowing.swift; sourceTree = "<group>"; };
+		105033292A87BFA500276CF5 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewController.swift; sourceTree = "<group>"; };
 		10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCompositionalLayoutMaker.swift; sourceTree = "<group>"; };
@@ -243,6 +245,14 @@
 			path = LoadingViewShowing;
 			sourceTree = "<group>";
 		};
+		105033282A87BF9400276CF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				105033292A87BFA500276CF5 /* Pagination.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		10751D542A82D5DA001DB36D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +271,7 @@
 		10751D592A842D96001DB36D /* MuseumItemsList */ = {
 			isa = PBXGroup;
 			children = (
+				105033282A87BF9400276CF5 /* Model */,
 				10751D682A843506001DB36D /* Builder */,
 				10751D662A8434CD001DB36D /* Interactor */,
 				10751D652A8434C3001DB36D /* Presenter */,
@@ -585,6 +596,7 @@
 				10751D852A843F03001DB36D /* MuseumItemsListServing.swift in Sources */,
 				10751D722A843767001DB36D /* MuseumItemsListPresentation.swift in Sources */,
 				105033192A86D61000276CF5 /* MuseumItemsListRouting.swift in Sources */,
+				1050332A2A87BFA500276CF5 /* Pagination.swift in Sources */,
 				10751D942A856F86001DB36D /* MuseumItemCollectionViewCell.swift in Sources */,
 				10751D8C2A843FE3001DB36D /* GetMuseumItemsResponse.swift in Sources */,
 				105033082A86C61400276CF5 /* MuseumItemsListCollectionViewDataSourceDelegate.swift in Sources */,

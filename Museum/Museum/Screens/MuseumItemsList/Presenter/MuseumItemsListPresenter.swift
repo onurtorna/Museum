@@ -17,21 +17,17 @@ final class MuseumItemsListPresenter {
     private let interactor: MuseumItemsListInteractorInputProtocol
     private let router: MuseumItemsListRouting
 
-    // MARK: Pagination related variables
-
-    private var shownItems = 0
-    private var totalItems = 0
-    private var currentPage = 1
-    // Prevents pagination to fetch again while actively fetching items
-    private var isActivelyFetchingItems = false
+    private var paginationInfo: Pagination
 
     // MARK: - Initialiser
 
     init(
+        paginationInfo: Pagination = Pagination(),
         view: MuseumItemsListViewable,
         interactor: MuseumItemsListInteractorInputProtocol,
         router: MuseumItemsListRouting
     ) {
+        self.paginationInfo = paginationInfo
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -49,8 +45,8 @@ extension MuseumItemsListPresenter: MuseumItemsListPresentation {
         if showLoading {
             router.showLoadingView()
         }
-        isActivelyFetchingItems = true
-        interactor.getMuseumItems(pageNumber: currentPage)
+        paginationInfo.isActivelyFetchingItems = true
+        interactor.getMuseumItems(pageNumber: paginationInfo.currentPage)
     }
 }
 
@@ -60,17 +56,20 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     @MainActor
     func gotMuseumItems(items: [ArtObject], totalItemCount: Int) {
         router.hideLoadingView()
-        isActivelyFetchingItems = false
-        totalItems = totalItemCount
-        shownItems += items.count
+        paginationInfo.isActivelyFetchingItems = false
+        paginationInfo.setTotalItemsCount(totalItemCount)
+        paginationInfo.addShownItems(count: items.count)
         view?.applySnapshot(items: items)
     }
 
     @MainActor
     func getMuseumItemsFailed(errorMessage: String) {
         router.hideLoadingView()
+        // Do not show error if there are items shown in the screen
+        // Fail silently
+        guard !paginationInfo.isPaginationActive else { return }
         view?.showRefreshButton()
-        isActivelyFetchingItems = false
+        paginationInfo.isActivelyFetchingItems = false
         router.showError(description: errorMessage) { [weak self] in
             self?.fetchMuseumItems(showLoading: true)
         }
@@ -81,11 +80,12 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
 
 extension MuseumItemsListPresenter {
     func paginationRequested() {
-        guard !isActivelyFetchingItems,
-              shownItems < totalItems else {
+        guard !paginationInfo.isActivelyFetchingItems,
+              paginationInfo.canLoadMore else {
             return
         }
-        currentPage += 1
+        paginationInfo.isPaginationActive = true
+        paginationInfo.incrementPageNumber()
         fetchMuseumItems(showLoading: false)
     }
 }
