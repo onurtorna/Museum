@@ -9,9 +9,10 @@ import UIKit
 
 final class MuseumItemsListRouter {
 
-    // MARK: - Private variables
+    // MARK: - Internal variables
 
-    private weak var viewController: UIViewController?
+    private(set) weak var viewController: UIViewController?
+    let loadingViewController = LoadingViewController()
 
     // MARK: - Initialisers
 
