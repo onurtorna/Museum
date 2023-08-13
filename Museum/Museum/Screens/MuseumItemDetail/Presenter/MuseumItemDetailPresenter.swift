@@ -31,17 +31,29 @@ final class MuseumItemDetailPresenter {
 // MARK: - MuseumItemDetailPresentation
 
 extension MuseumItemDetailPresenter: MuseumItemDetailPresentation {
-
+    func viewDidLoad() {
+        router.showLoadingView()
+        interactor.getItemDetail()
+    }
 }
 
 // MARK: - MuseumItemDetailInteractorOutputProtocol
 
 extension MuseumItemDetailPresenter: MuseumItemDetailInteractorOutputProtocol {
-    func gotMuseumItemDetail(_ item: ArtObject) {
+    func gotMuseumItemDetail(_ item: ArtObjectDetail) {
+        router.hideLoadingView()
+        view?.setItem(title: item.longTitle, description: item.description)
 
+        let imageEntity = item.webImage
+        let heightToWidthRatio = CGFloat(imageEntity.height) / CGFloat(imageEntity.width)
+        view?.setItemImageURL(imageEntity.url)
+        view?.setImageViewHeightToWeightRatio(heightToWidthRatio)
     }
 
     func getMuseumItemDetailFailed(errorMessage: String) {
-
+        router.hideLoadingView()
+        router.showError(description: errorMessage) { [weak self] in
+            self?.viewDidLoad()
+        }
     }
 }
