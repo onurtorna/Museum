@@ -9,7 +9,7 @@ import Foundation
 
 protocol MuseumItemDetailInteractorOutputProtocol: AnyObject {
     @MainActor
-    func gotMuseumItemDetail(_ item: ArtObject)
+    func gotMuseumItemDetail(_ item: ArtObjectDetail)
 
     @MainActor
     func getMuseumItemDetailFailed(errorMessage: String)

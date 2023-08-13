@@ -10,7 +10,7 @@ import Networking
 struct GetMuseumItemDetailRequest: MuseumRequest {
     let method: HTTPMethod = .get
     let path: String
-    let parameters: Encodable? = nil
+    let parameters: Encodable? = GetMuseumItemDetailRequestParameters()
 
     init(objectID: String) {
         path = "collection/\(objectID)"

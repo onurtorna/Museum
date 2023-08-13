@@ -8,6 +8,5 @@
 import Foundation
 
 struct GetMuseumItemDetailResponse: Decodable {
-    let count: Int
-    let artObject: ArtObject
+    let artObject: ArtObjectDetail
 }
