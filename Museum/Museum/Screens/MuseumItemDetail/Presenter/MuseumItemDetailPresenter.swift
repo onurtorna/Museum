@@ -12,16 +12,19 @@ final class MuseumItemDetailPresenter {
     // MARK: - Private variables
 
     private weak var view: MuseumItemDetailViewable?
-    private var interactor: MuseumItemDetailInteractorInputProtocol
+    private let interactor: MuseumItemDetailInteractorInputProtocol
+    private let router: MuseumItemDetailRouting
 
     // MARK: - Initialisers
 
     init(
         view: MuseumItemDetailViewable,
-        interactor: MuseumItemDetailInteractorInputProtocol
+        interactor: MuseumItemDetailInteractorInputProtocol,
+        router: MuseumItemDetailRouting
     ) {
         self.view = view
         self.interactor = interactor
+        self.router = router
     }
 }
 

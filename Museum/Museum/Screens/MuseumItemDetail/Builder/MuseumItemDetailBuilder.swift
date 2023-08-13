@@ -11,9 +11,11 @@ enum MuseumItemDetailBuilder {
     static func build(objectNumber: String) -> MuseumItemDetailViewController {
         let view = MuseumItemDetailViewController()
         let interactor = MuseumItemDetailInteractor(itemObjectNumber: objectNumber)
+        let router = MuseumItemDetailRouter(viewController: view)
         let presenter = MuseumItemDetailPresenter(
             view: view,
-            interactor: interactor
+            interactor: interactor,
+            router: router
         )
         interactor.output = presenter
         view.presenter = presenter
