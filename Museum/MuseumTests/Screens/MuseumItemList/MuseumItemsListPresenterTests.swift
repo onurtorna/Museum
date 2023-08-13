@@ -87,6 +87,7 @@ final class MuseumItemsListPresenterTests: XCTestCase {
 
         // Then
         XCTAssert(router.isHideLoadingViewCalled)
+        XCTAssert(view.isHideRefreshButtonCalled)
         XCTAssertEqual(
             view.applySnapshotParameters,
             fetchedItems

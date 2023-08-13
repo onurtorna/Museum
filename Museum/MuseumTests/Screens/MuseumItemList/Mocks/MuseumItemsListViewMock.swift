@@ -17,4 +17,9 @@ final class MuseumItemsListViewMock: MuseumItemsListViewable {
     func showRefreshButton() {
         isShowRefreshButtonCalled = true
     }
+
+    private(set) var isHideRefreshButtonCalled = false
+    func hideRefreshButton() {
+        isHideRefreshButtonCalled = true
+    }
 }
