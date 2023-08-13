@@ -54,7 +54,6 @@
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
-		10A6234E2A818CBC008D1D2F /* MuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6234D2A818CBC008D1D2F /* MuseumTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,7 +116,6 @@
 		10A623422A818CBB008D1D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A623442A818CBB008D1D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10A623492A818CBC008D1D2F /* MuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10A6234D2A818CBC008D1D2F /* MuseumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,7 +451,6 @@
 		10A6234C2A818CBC008D1D2F /* MuseumTests */ = {
 			isa = PBXGroup;
 			children = (
-				10A6234D2A818CBC008D1D2F /* MuseumTests.swift */,
 			);
 			path = MuseumTests;
 			sourceTree = "<group>";
@@ -641,7 +638,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10A6234E2A818CBC008D1D2F /* MuseumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
