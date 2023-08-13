@@ -79,6 +79,7 @@
 		108C1F472A892CCB00075A46 /* MuseumItemDetailViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */; };
 		108C1F492A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */; };
 		108C1F4B2A892D9100075A46 /* MuseumItemDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */; };
+		108C1F4D2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4C2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift */; };
 		108C1F4F2A89343600075A46 /* MuseumItemDetailServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */; };
 		108C1F512A8934F700075A46 /* MuseumItemDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
@@ -168,6 +169,7 @@
 		108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailViewMock.swift; sourceTree = "<group>"; };
 		108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorMock.swift; sourceTree = "<group>"; };
 		108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailRouterMock.swift; sourceTree = "<group>"; };
+		108C1F4C2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorTests.swift; sourceTree = "<group>"; };
 		108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailServiceMock.swift; sourceTree = "<group>"; };
 		108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailPresenterMock.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -596,6 +598,7 @@
 			isa = PBXGroup;
 			children = (
 				108C1F432A892C8600075A46 /* Mocks */,
+				108C1F4C2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift */,
 				108C1F442A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift */,
 			);
 			path = MuseumItemDetail;
@@ -860,6 +863,7 @@
 				108C1F4B2A892D9100075A46 /* MuseumItemDetailRouterMock.swift in Sources */,
 				108C1F4F2A89343600075A46 /* MuseumItemDetailServiceMock.swift in Sources */,
 				108C1F452A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift in Sources */,
+				108C1F4D2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift in Sources */,
 				105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */,
 				108C1F472A892CCB00075A46 /* MuseumItemDetailViewMock.swift in Sources */,
 				105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */,
