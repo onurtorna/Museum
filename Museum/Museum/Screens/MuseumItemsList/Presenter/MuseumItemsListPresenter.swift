@@ -60,6 +60,7 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
         paginationInfo.incrementPageNumber()
         paginationInfo.setTotalItemsCount(totalItemCount)
         paginationInfo.addShownItems(count: items.count)
+        view?.hideRefreshButton()
         view?.applySnapshot(items: items)
     }
 

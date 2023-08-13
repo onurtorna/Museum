@@ -50,11 +50,15 @@ extension MuseumItemsListViewController: MuseumItemsListViewable {
     func showRefreshButton() {
         let refreshAction = UIAction { [weak self] _ in
             self?.presenter?.fetchMuseumItems(showLoading: true)
-            self?.navigationItem.rightBarButtonItem = nil
+            self?.hideRefreshButton()
         }
         let refreshButton = UIBarButtonItem(systemItem: .refresh, primaryAction: refreshAction)
         refreshButton.tintColor = .black
         navigationItem.rightBarButtonItem = refreshButton
+    }
+
+    func hideRefreshButton() {
+        navigationItem.rightBarButtonItem = nil
     }
 }
 
