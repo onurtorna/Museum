@@ -13,7 +13,6 @@ final class MuseumItemsListViewController: UIViewController {
 
     var presenter: MuseumItemsListPresentation? {
         didSet {
-            presenter?.load()
             dataSource.setDelegate(presenter)
         }
     }
@@ -30,13 +29,20 @@ final class MuseumItemsListViewController: UIViewController {
     ) {
         self.dataSource = dataSource
         super.init(nibName: nil, bundle: nil)
-        setUp()
-        dataSource.configureDataSource(for: collectionView)
     }
 
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUp()
+        dataSource.configureDataSource(for: collectionView)
+        presenter?.load()
     }
 }
 

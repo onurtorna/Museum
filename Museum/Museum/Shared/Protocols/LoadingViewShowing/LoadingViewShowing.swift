@@ -16,7 +16,7 @@ protocol LoadingViewShowing {
 extension LoadingViewShowing where Self: Router {
     func showLoadingView() {
         guard loadingViewController.presentingViewController == nil else { return }
-        viewController?.present(loadingViewController, animated: false)
+        viewController?.navigationController?.present(loadingViewController, animated: false)
     }
 
     func hideLoadingView() {
