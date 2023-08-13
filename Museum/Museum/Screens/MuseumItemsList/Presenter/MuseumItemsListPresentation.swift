@@ -10,4 +10,5 @@
 protocol MuseumItemsListPresentation: AnyObject, MuseumItemsListCollectionViewDataSourceDelegate {
     func load()
     func fetchMuseumItems(showLoading: Bool)
+    func didTapArtObject(_ object: ArtObject?)
 }

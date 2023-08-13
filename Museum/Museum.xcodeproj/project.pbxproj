@@ -59,6 +59,29 @@
 		10751D982A85725F001DB36D /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D972A85725F001DB36D /* Spacing.swift */; };
 		10751D9A2A857287001DB36D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D992A857287001DB36D /* Font.swift */; };
 		10751D9C2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D9B2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift */; };
+		108C1F1D2A89037000075A46 /* MuseumItemDetailViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F1C2A89037000075A46 /* MuseumItemDetailViewable.swift */; };
+		108C1F1F2A8903A800075A46 /* MuseumItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F1E2A8903A800075A46 /* MuseumItemDetailViewController.swift */; };
+		108C1F212A8903E200075A46 /* MuseumItemDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F202A8903E200075A46 /* MuseumItemDetailPresentation.swift */; };
+		108C1F232A8903F600075A46 /* MuseumItemDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F222A8903F600075A46 /* MuseumItemDetailPresenter.swift */; };
+		108C1F252A89044E00075A46 /* MuseumItemDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F242A89044E00075A46 /* MuseumItemDetailInteractor.swift */; };
+		108C1F272A89045F00075A46 /* MuseumItemDetailInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F262A89045F00075A46 /* MuseumItemDetailInteractorInputProtocol.swift */; };
+		108C1F292A89048900075A46 /* MuseumItemDetailInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F282A89048900075A46 /* MuseumItemDetailInteractorOutputProtocol.swift */; };
+		108C1F2C2A8904D900075A46 /* MuseumItemDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F2B2A8904D900075A46 /* MuseumItemDetailBuilder.swift */; };
+		108C1F302A89129000075A46 /* GetMuseumItemDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F2F2A89129000075A46 /* GetMuseumItemDetailRequest.swift */; };
+		108C1F322A89132D00075A46 /* GetMuseumItemDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F312A89132D00075A46 /* GetMuseumItemDetailResponse.swift */; };
+		108C1F362A8918F800075A46 /* MuseumItemDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F352A8918F800075A46 /* MuseumItemDetailService.swift */; };
+		108C1F382A89190300075A46 /* MuseumItemDetailServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F372A89190300075A46 /* MuseumItemDetailServing.swift */; };
+		108C1F3B2A891B4A00075A46 /* MuseumItemDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F3A2A891B4A00075A46 /* MuseumItemDetailRouter.swift */; };
+		108C1F3D2A891B5F00075A46 /* MuseumItemDetailRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F3C2A891B5F00075A46 /* MuseumItemDetailRouting.swift */; };
+		108C1F3F2A8922DF00075A46 /* GetMuseumItemDetailRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F3E2A8922DF00075A46 /* GetMuseumItemDetailRequestParameters.swift */; };
+		108C1F412A8924C200075A46 /* ArtObjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F402A8924C200075A46 /* ArtObjectDetail.swift */; };
+		108C1F452A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F442A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift */; };
+		108C1F472A892CCB00075A46 /* MuseumItemDetailViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */; };
+		108C1F492A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */; };
+		108C1F4B2A892D9100075A46 /* MuseumItemDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */; };
+		108C1F4D2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4C2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift */; };
+		108C1F4F2A89343600075A46 /* MuseumItemDetailServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */; };
+		108C1F512A8934F700075A46 /* MuseumItemDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
@@ -126,6 +149,29 @@
 		10751D972A85725F001DB36D /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		10751D992A857287001DB36D /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		10751D9B2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArtObject+MuseumItemCollectionViewCellConfiguration.swift"; sourceTree = "<group>"; };
+		108C1F1C2A89037000075A46 /* MuseumItemDetailViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailViewable.swift; sourceTree = "<group>"; };
+		108C1F1E2A8903A800075A46 /* MuseumItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailViewController.swift; sourceTree = "<group>"; };
+		108C1F202A8903E200075A46 /* MuseumItemDetailPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailPresentation.swift; sourceTree = "<group>"; };
+		108C1F222A8903F600075A46 /* MuseumItemDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailPresenter.swift; sourceTree = "<group>"; };
+		108C1F242A89044E00075A46 /* MuseumItemDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractor.swift; sourceTree = "<group>"; };
+		108C1F262A89045F00075A46 /* MuseumItemDetailInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		108C1F282A89048900075A46 /* MuseumItemDetailInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		108C1F2B2A8904D900075A46 /* MuseumItemDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailBuilder.swift; sourceTree = "<group>"; };
+		108C1F2F2A89129000075A46 /* GetMuseumItemDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemDetailRequest.swift; sourceTree = "<group>"; };
+		108C1F312A89132D00075A46 /* GetMuseumItemDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemDetailResponse.swift; sourceTree = "<group>"; };
+		108C1F352A8918F800075A46 /* MuseumItemDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailService.swift; sourceTree = "<group>"; };
+		108C1F372A89190300075A46 /* MuseumItemDetailServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailServing.swift; sourceTree = "<group>"; };
+		108C1F3A2A891B4A00075A46 /* MuseumItemDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailRouter.swift; sourceTree = "<group>"; };
+		108C1F3C2A891B5F00075A46 /* MuseumItemDetailRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailRouting.swift; sourceTree = "<group>"; };
+		108C1F3E2A8922DF00075A46 /* GetMuseumItemDetailRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMuseumItemDetailRequestParameters.swift; sourceTree = "<group>"; };
+		108C1F402A8924C200075A46 /* ArtObjectDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectDetail.swift; sourceTree = "<group>"; };
+		108C1F442A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailPresenterTests.swift; sourceTree = "<group>"; };
+		108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailViewMock.swift; sourceTree = "<group>"; };
+		108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorMock.swift; sourceTree = "<group>"; };
+		108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailRouterMock.swift; sourceTree = "<group>"; };
+		108C1F4C2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorTests.swift; sourceTree = "<group>"; };
+		108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailServiceMock.swift; sourceTree = "<group>"; };
+		108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailPresenterMock.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233F2A818CBB008D1D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -270,6 +316,7 @@
 		1050332B2A87C40200276CF5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				108C1F422A892C7B00075A46 /* MuseumItemDetail */,
 				1050332C2A87C40600276CF5 /* MuseumItemList */,
 			);
 			path = Screens;
@@ -407,6 +454,7 @@
 			children = (
 				10751D792A843CC0001DB36D /* ArtObject.swift */,
 				10751D7B2A843D05001DB36D /* ImageEntity.swift */,
+				108C1F402A8924C200075A46 /* ArtObjectDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -468,6 +516,106 @@
 			path = DesignKit;
 			sourceTree = "<group>";
 		};
+		108C1F182A89033E00075A46 /* MuseumItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F2A2A8904C300075A46 /* Builder */,
+				108C1F1B2A89035F00075A46 /* Interactor */,
+				108C1F1A2A89035900075A46 /* Presenter */,
+				108C1F392A891B3A00075A46 /* Router */,
+				108C1F192A89035500075A46 /* View */,
+			);
+			path = MuseumItemDetail;
+			sourceTree = "<group>";
+		};
+		108C1F192A89035500075A46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F1C2A89037000075A46 /* MuseumItemDetailViewable.swift */,
+				108C1F1E2A8903A800075A46 /* MuseumItemDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		108C1F1A2A89035900075A46 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F202A8903E200075A46 /* MuseumItemDetailPresentation.swift */,
+				108C1F222A8903F600075A46 /* MuseumItemDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		108C1F1B2A89035F00075A46 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F2D2A89126B00075A46 /* Service */,
+				108C1F242A89044E00075A46 /* MuseumItemDetailInteractor.swift */,
+				108C1F262A89045F00075A46 /* MuseumItemDetailInteractorInputProtocol.swift */,
+				108C1F282A89048900075A46 /* MuseumItemDetailInteractorOutputProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		108C1F2A2A8904C300075A46 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F2B2A8904D900075A46 /* MuseumItemDetailBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		108C1F2D2A89126B00075A46 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F2E2A89127600075A46 /* RequestAndResponse */,
+				108C1F352A8918F800075A46 /* MuseumItemDetailService.swift */,
+				108C1F372A89190300075A46 /* MuseumItemDetailServing.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		108C1F2E2A89127600075A46 /* RequestAndResponse */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F2F2A89129000075A46 /* GetMuseumItemDetailRequest.swift */,
+				108C1F3E2A8922DF00075A46 /* GetMuseumItemDetailRequestParameters.swift */,
+				108C1F312A89132D00075A46 /* GetMuseumItemDetailResponse.swift */,
+			);
+			path = RequestAndResponse;
+			sourceTree = "<group>";
+		};
+		108C1F392A891B3A00075A46 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F3A2A891B4A00075A46 /* MuseumItemDetailRouter.swift */,
+				108C1F3C2A891B5F00075A46 /* MuseumItemDetailRouting.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		108C1F422A892C7B00075A46 /* MuseumItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F432A892C8600075A46 /* Mocks */,
+				108C1F4C2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift */,
+				108C1F442A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift */,
+			);
+			path = MuseumItemDetail;
+			sourceTree = "<group>";
+		};
+		108C1F432A892C8600075A46 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */,
+				108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */,
+				108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */,
+				108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */,
+				108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		10A6232A2A818CB9008D1D2F = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +672,7 @@
 		10A623672A819208008D1D2F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				108C1F182A89033E00075A46 /* MuseumItemDetail */,
 				10751D592A842D96001DB36D /* MuseumItemsList */,
 			);
 			path = Screens;
@@ -645,8 +794,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108C1F3F2A8922DF00075A46 /* GetMuseumItemDetailRequestParameters.swift in Sources */,
 				105033242A87B2DD00276CF5 /* Router.swift in Sources */,
 				10751D642A843100001DB36D /* UIView+LayoutConstraints.swift in Sources */,
+				108C1F1F2A8903A800075A46 /* MuseumItemDetailViewController.swift in Sources */,
 				10751D852A843F03001DB36D /* MuseumItemsListServing.swift in Sources */,
 				10751D722A843767001DB36D /* MuseumItemsListPresentation.swift in Sources */,
 				105033192A86D61000276CF5 /* MuseumItemsListRouting.swift in Sources */,
@@ -655,6 +806,7 @@
 				10751D8C2A843FE3001DB36D /* GetMuseumItemsResponse.swift in Sources */,
 				105033082A86C61400276CF5 /* MuseumItemsListCollectionViewDataSourceDelegate.swift in Sources */,
 				10751D742A84377F001DB36D /* MuseumItemsListInteractorInputProtocol.swift in Sources */,
+				108C1F362A8918F800075A46 /* MuseumItemDetailService.swift in Sources */,
 				10751D802A843E60001DB36D /* MuseumRequest.swift in Sources */,
 				10751D912A856E30001DB36D /* MuseumItemsListCollectionViewDataSource.swift in Sources */,
 				10751D762A8437ED001DB36D /* MuseumItemsListBuilder.swift in Sources */,
@@ -664,8 +816,12 @@
 				105032F02A8596CB00276CF5 /* MuseumItemCollectionViewCellConfiguration.swift in Sources */,
 				105032EE2A85936400276CF5 /* MuseumItemsListSectionHeaderView.swift in Sources */,
 				1050331D2A86D6FF00276CF5 /* ErrorShowing.swift in Sources */,
+				108C1F2C2A8904D900075A46 /* MuseumItemDetailBuilder.swift in Sources */,
 				10751D7E2A843DDD001DB36D /* MuseumBaseURLHaving.swift in Sources */,
+				108C1F292A89048900075A46 /* MuseumItemDetailInteractorOutputProtocol.swift in Sources */,
 				10751D8A2A843FB6001DB36D /* GetMuseumItemsRequestParameters.swift in Sources */,
+				108C1F232A8903F600075A46 /* MuseumItemDetailPresenter.swift in Sources */,
+				108C1F412A8924C200075A46 /* ArtObjectDetail.swift in Sources */,
 				10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */,
 				105033112A86D1F200276CF5 /* AlertFactory.swift in Sources */,
 				10751D9C2A85782B001DB36D /* ArtObject+MuseumItemCollectionViewCellConfiguration.swift in Sources */,
@@ -677,16 +833,25 @@
 				105033202A86DC0900276CF5 /* LoadingViewController.swift in Sources */,
 				10751D832A843EF1001DB36D /* MuseumItemsListService.swift in Sources */,
 				10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */,
+				108C1F212A8903E200075A46 /* MuseumItemDetailPresentation.swift in Sources */,
+				108C1F3B2A891B4A00075A46 /* MuseumItemDetailRouter.swift in Sources */,
+				108C1F3D2A891B5F00075A46 /* MuseumItemDetailRouting.swift in Sources */,
+				108C1F1D2A89037000075A46 /* MuseumItemDetailViewable.swift in Sources */,
 				10751D8E2A8443F1001DB36D /* Secret.swift in Sources */,
 				10751D6E2A8436B9001DB36D /* MuseumItemsListInteractorOutputProtocol.swift in Sources */,
 				105033272A87B38300276CF5 /* LoadingViewShowing.swift in Sources */,
+				108C1F322A89132D00075A46 /* GetMuseumItemDetailResponse.swift in Sources */,
 				10751D7A2A843CC0001DB36D /* ArtObject.swift in Sources */,
+				108C1F252A89044E00075A46 /* MuseumItemDetailInteractor.swift in Sources */,
+				108C1F382A89190300075A46 /* MuseumItemDetailServing.swift in Sources */,
 				10751D9A2A857287001DB36D /* Font.swift in Sources */,
+				108C1F302A89129000075A46 /* GetMuseumItemDetailRequest.swift in Sources */,
 				10751D882A843F8A001DB36D /* GetMuseumItemsRequest.swift in Sources */,
 				105032F32A85974A00276CF5 /* MuseumItemsListCollectionViewDataSourcing.swift in Sources */,
 				10751D702A8436FC001DB36D /* MuseumItemsListViewable.swift in Sources */,
 				10751D982A85725F001DB36D /* Spacing.swift in Sources */,
 				10751D6A2A84351B001DB36D /* MuseumItemsListPresenter.swift in Sources */,
+				108C1F272A89045F00075A46 /* MuseumItemDetailInteractorInputProtocol.swift in Sources */,
 				10751D6C2A843573001DB36D /* MuseumItemsListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -695,14 +860,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108C1F4B2A892D9100075A46 /* MuseumItemDetailRouterMock.swift in Sources */,
+				108C1F4F2A89343600075A46 /* MuseumItemDetailServiceMock.swift in Sources */,
+				108C1F452A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift in Sources */,
+				108C1F4D2A8933DA00075A46 /* MuseumItemDetailInteractorTests.swift in Sources */,
 				105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */,
+				108C1F472A892CCB00075A46 /* MuseumItemDetailViewMock.swift in Sources */,
 				105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */,
 				105033382A88ED3D00276CF5 /* EntityMaker.swift in Sources */,
 				1050332E2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift in Sources */,
 				105033312A87C68300276CF5 /* MuseumItemsListRouterMock.swift in Sources */,
+				108C1F492A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift in Sources */,
 				1050333E2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift in Sources */,
 				1050333C2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift in Sources */,
 				1050333A2A88FB9500276CF5 /* MuseumItemsListInteractorTests.swift in Sources */,
+				108C1F512A8934F700075A46 /* MuseumItemDetailPresenterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

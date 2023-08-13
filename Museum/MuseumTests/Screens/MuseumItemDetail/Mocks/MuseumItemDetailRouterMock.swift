@@ -1,14 +1,14 @@
 //
-//  MuseumItemsListRouterMock.swift
+//  MuseumItemDetailRouterMock.swift
 //  MuseumTests
 //
-//  Created by Onur Torna on 12.08.2023.
+//  Created by Onur Torna on 13.08.2023.
 //
 
 import UIKit
 @testable import Museum
 
-final class MuseumItemsListRouterMock: MuseumItemsListRouting {
+final class MuseumItemDetailRouterMock: MuseumItemDetailRouting {
     var viewController: UIViewController?
     var loadingViewController: LoadingViewController = .init()
 
@@ -25,10 +25,5 @@ final class MuseumItemsListRouterMock: MuseumItemsListRouting {
     private(set) var isHideLoadingViewCalled = false
     func hideLoadingView() {
         isHideLoadingViewCalled = true
-    }
-
-    private(set) var navigateToItemDetailParameter: String?
-    func navigateToItemDetail(objectNumber: String) {
-        navigateToItemDetailParameter = objectNumber
     }
 }
