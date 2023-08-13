@@ -79,6 +79,8 @@
 		108C1F472A892CCB00075A46 /* MuseumItemDetailViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */; };
 		108C1F492A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */; };
 		108C1F4B2A892D9100075A46 /* MuseumItemDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */; };
+		108C1F4F2A89343600075A46 /* MuseumItemDetailServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */; };
+		108C1F512A8934F700075A46 /* MuseumItemDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */; };
 		10A623372A818CBA008D1D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A623362A818CBA008D1D2F /* AppDelegate.swift */; };
 		10A623402A818CBB008D1D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A6233F2A818CBB008D1D2F /* Assets.xcassets */; };
 		10A623432A818CBB008D1D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A623412A818CBB008D1D2F /* LaunchScreen.storyboard */; };
@@ -166,6 +168,8 @@
 		108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailViewMock.swift; sourceTree = "<group>"; };
 		108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailInteractorMock.swift; sourceTree = "<group>"; };
 		108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailRouterMock.swift; sourceTree = "<group>"; };
+		108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailServiceMock.swift; sourceTree = "<group>"; };
+		108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemDetailPresenterMock.swift; sourceTree = "<group>"; };
 		10A623332A818CBA008D1D2F /* Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A623362A818CBA008D1D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A6233F2A818CBB008D1D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -601,7 +605,9 @@
 			isa = PBXGroup;
 			children = (
 				108C1F482A892D5A00075A46 /* MuseumItemDetailInteractorMock.swift */,
+				108C1F502A8934F700075A46 /* MuseumItemDetailPresenterMock.swift */,
 				108C1F4A2A892D9100075A46 /* MuseumItemDetailRouterMock.swift */,
+				108C1F4E2A89343600075A46 /* MuseumItemDetailServiceMock.swift */,
 				108C1F462A892CCB00075A46 /* MuseumItemDetailViewMock.swift */,
 			);
 			path = Mocks;
@@ -852,6 +858,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				108C1F4B2A892D9100075A46 /* MuseumItemDetailRouterMock.swift in Sources */,
+				108C1F4F2A89343600075A46 /* MuseumItemDetailServiceMock.swift in Sources */,
 				108C1F452A892C9D00075A46 /* MuseumItemDetailPresenterTests.swift in Sources */,
 				105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */,
 				108C1F472A892CCB00075A46 /* MuseumItemDetailViewMock.swift in Sources */,
@@ -863,6 +870,7 @@
 				1050333E2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift in Sources */,
 				1050333C2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift in Sources */,
 				1050333A2A88FB9500276CF5 /* MuseumItemsListInteractorTests.swift in Sources */,
+				108C1F512A8934F700075A46 /* MuseumItemDetailPresenterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
