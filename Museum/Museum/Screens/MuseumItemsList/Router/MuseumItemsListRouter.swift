@@ -28,9 +28,4 @@ extension MuseumItemsListRouter: MuseumItemsListRouting {
         let nextViewController = MuseumItemDetailBuilder.build(objectNumber: objectNumber)
         viewController?.navigationController?.pushViewController(nextViewController, animated: true)
     }
-
-    func showError(description: String, retryAction: AlertAction) {
-        let errorAlertViewController = AlertFactory.makeErrorAlert(message: description, retryActionHandler: retryAction)
-        viewController?.present(errorAlertViewController, animated: true)
-    }
 }
