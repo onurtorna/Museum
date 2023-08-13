@@ -24,6 +24,9 @@
 		105033242A87B2DD00276CF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033232A87B2DD00276CF5 /* Router.swift */; };
 		105033272A87B38300276CF5 /* LoadingViewShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033262A87B38300276CF5 /* LoadingViewShowing.swift */; };
 		1050332A2A87BFA500276CF5 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033292A87BFA500276CF5 /* Pagination.swift */; };
+		105033312A87C68300276CF5 /* MuseumItemsListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033302A87C68300276CF5 /* MuseumItemsListRouterMock.swift */; };
+		105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */; };
+		105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */; };
 		10751D582A82D85D001DB36D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 10751D572A82D85D001DB36D /* Networking */; };
 		10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */; };
 		10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */; };
@@ -83,6 +86,9 @@
 		105033232A87B2DD00276CF5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		105033262A87B38300276CF5 /* LoadingViewShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewShowing.swift; sourceTree = "<group>"; };
 		105033292A87BFA500276CF5 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		105033302A87C68300276CF5 /* MuseumItemsListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListRouterMock.swift; sourceTree = "<group>"; };
+		105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewMock.swift; sourceTree = "<group>"; };
+		105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListInteractorMock.swift; sourceTree = "<group>"; };
 		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewController.swift; sourceTree = "<group>"; };
 		10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCompositionalLayoutMaker.swift; sourceTree = "<group>"; };
@@ -249,6 +255,25 @@
 				105033292A87BFA500276CF5 /* Pagination.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		};
+		1050332C2A87C40600276CF5 /* MuseumItemList */ = {
+			isa = PBXGroup;
+			children = (
+				1050332F2A87C67300276CF5 /* Mocks */,
+			);
+			path = MuseumItemList;
+			sourceTree = "<group>";
+		};
+		1050332F2A87C67300276CF5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */,
+				105033302A87C68300276CF5 /* MuseumItemsListRouterMock.swift */,
+				105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		10751D542A82D5DA001DB36D /* Networking */ = {
@@ -451,6 +476,7 @@
 		10A6234C2A818CBC008D1D2F /* MuseumTests */ = {
 			isa = PBXGroup;
 			children = (
+				105033362A88ED2E00276CF5 /* Utilities */,
 			);
 			path = MuseumTests;
 			sourceTree = "<group>";
@@ -538,6 +564,7 @@
 					};
 					10A623482A818CBC008D1D2F = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 10A623322A818CBA008D1D2F;
 					};
 				};
@@ -638,6 +665,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */,
+				105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */,
+				105033312A87C68300276CF5 /* MuseumItemsListRouterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
