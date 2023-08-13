@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class MuseumItemDetailViewController: UIViewController {
 
@@ -36,22 +37,34 @@ final class MuseumItemDetailViewController: UIViewController {
     private lazy var titleLabel = makeLabel(font: Font.title2)
     private lazy var descriptionLabel = makeLabel(font: Font.regularBody3)
 
-    // MARK: - Initialisers
+    // MARK: - Lifecycle
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         setUp()
-    }
-
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        presenter?.viewDidLoad()
     }
 }
 
 // MARK: - MuseumItemsListViewable
 
 extension MuseumItemDetailViewController: MuseumItemDetailViewable {
+    func setItem(title: String, description: String?) {
+        titleLabel.text = title
+        descriptionLabel.text = description
+    }
+
+    func setItemImageURL(_ url: URL) {
+        imageView.kf.setImage(with: url, placeholder: Image.placeHolder)
+    }
+
+    func setImageViewHeightToWeightRatio(_ multiplier: CGFloat) {
+        imageViewHeightToWidthContraint = imageView.heightAnchor.constraint(
+            equalTo: imageView.widthAnchor,
+            multiplier: multiplier
+        )
+        imageViewHeightToWidthContraint?.isActive = true
+    }
 }
 
 // MARK: - Helpers

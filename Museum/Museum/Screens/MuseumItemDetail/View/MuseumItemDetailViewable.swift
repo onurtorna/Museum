@@ -8,5 +8,7 @@
 import Foundation
 
 protocol MuseumItemDetailViewable: AnyObject {
-    // To be implemented:
+    func setItemImageURL(_ url: URL)
+    func setItem(title: String, description: String?)
+    func setImageViewHeightToWeightRatio(_ multiplier: CGFloat)
 }
