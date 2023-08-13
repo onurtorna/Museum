@@ -48,6 +48,14 @@ extension MuseumItemsListPresenter: MuseumItemsListPresentation {
         paginationInfo.isActivelyFetchingItems = true
         interactor.getMuseumItems(pageNumber: paginationInfo.currentPage)
     }
+
+    func didTapArtObject(_ object: ArtObject?) {
+        guard let object else {
+            assertionFailure("Could not find tapped object in data source")
+            return
+        }
+        router.navigateToItemDetail(objectNumber: object.objectNumber)
+    }
 }
 
 // MARK: - MuseumItemsListInteractorOutputProtocol

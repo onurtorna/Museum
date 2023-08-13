@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MuseumItemsListRouting: AnyObject, Router, ErrorShowing, LoadingViewShowing {
-    // To be implemented:
+    func navigateToItemDetail(objectNumber: String)
 }

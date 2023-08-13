@@ -62,6 +62,18 @@ extension MuseumItemsListViewController: MuseumItemsListViewable {
     }
 }
 
+// MARK: UICollectionViewDelegate
+
+extension MuseumItemsListViewController: UICollectionViewDelegate {
+    func collectionView(
+        _: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
+        let item = dataSource.museumItem(at: indexPath.row)
+        presenter?.didTapArtObject(item)
+    }
+}
+
 // MARK: - Helpers
 
 extension MuseumItemsListViewController {
@@ -77,6 +89,7 @@ extension MuseumItemsListViewController {
             collectionViewLayout: compositionalLayoutMaker.makeCompositionalLayout()
         )
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.delegate = self
         return collectionView
     }
 }

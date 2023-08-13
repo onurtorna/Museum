@@ -54,6 +54,14 @@ extension MuseumItemsListCollectionViewDataSource: MuseumItemsListCollectionView
     func setDelegate(_ delegate: MuseumItemsListCollectionViewDataSourceDelegate?) {
         self.delegate = delegate
     }
+
+    func museumItem(at index: Int) -> ArtObject? {
+        guard let items = dataSource?.snapshot().itemIdentifiers(inSection: .artObjects),
+              items.indices.contains(index) else {
+            return nil
+        }
+        return items[index]
+    }
 }
 
 // MARK: - Set Up Data Source
