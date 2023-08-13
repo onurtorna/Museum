@@ -27,10 +27,30 @@ enum EntityMaker {
         )
     }
 
+    static func makeArtObjectDetail(
+        objectNumber: String = "",
+        title: String = "",
+        longTitle: String = "",
+        description: String = "",
+        principalOrFirstMaker: String = "",
+        webImage: ImageEntity = makeImageEntity()
+    ) -> ArtObjectDetail {
+        ArtObjectDetail(
+            objectNumber: objectNumber,
+            title: title,
+            longTitle: longTitle,
+            description: description,
+            principalOrFirstMaker: principalOrFirstMaker,
+            webImage: webImage
+        )
+    }
+
     static func makeImageEntity(
-        url: URL = .init(string: "www.rijksmuseum.nl")!
+        url: URL = .init(string: "www.rijksmuseum.nl")!,
+        width: Int = 100,
+        height: Int = 100
     ) -> ImageEntity {
-        ImageEntity(url: url, width: 100, height: 100)
+        ImageEntity(url: url, width: width, height: height)
     }
 
     static func makeArtObjectList(itemCount: Int) -> [ArtObject] {
