@@ -24,6 +24,7 @@
 		105033242A87B2DD00276CF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033232A87B2DD00276CF5 /* Router.swift */; };
 		105033272A87B38300276CF5 /* LoadingViewShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033262A87B38300276CF5 /* LoadingViewShowing.swift */; };
 		1050332A2A87BFA500276CF5 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033292A87BFA500276CF5 /* Pagination.swift */; };
+		1050332E2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050332D2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift */; };
 		105033312A87C68300276CF5 /* MuseumItemsListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033302A87C68300276CF5 /* MuseumItemsListRouterMock.swift */; };
 		105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */; };
 		105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */; };
@@ -87,6 +88,7 @@
 		105033232A87B2DD00276CF5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		105033262A87B38300276CF5 /* LoadingViewShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewShowing.swift; sourceTree = "<group>"; };
 		105033292A87BFA500276CF5 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		1050332D2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListPresenterTests.swift; sourceTree = "<group>"; };
 		105033302A87C68300276CF5 /* MuseumItemsListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListRouterMock.swift; sourceTree = "<group>"; };
 		105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewMock.swift; sourceTree = "<group>"; };
 		105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListInteractorMock.swift; sourceTree = "<group>"; };
@@ -259,11 +261,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1050332B2A87C40200276CF5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1050332C2A87C40600276CF5 /* MuseumItemList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
 		};
 		1050332C2A87C40600276CF5 /* MuseumItemList */ = {
 			isa = PBXGroup;
 			children = (
 				1050332F2A87C67300276CF5 /* Mocks */,
+				1050332D2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift */,
 			);
 			path = MuseumItemList;
 			sourceTree = "<group>";
@@ -486,6 +496,7 @@
 		10A6234C2A818CBC008D1D2F /* MuseumTests */ = {
 			isa = PBXGroup;
 			children = (
+				1050332B2A87C40200276CF5 /* Screens */,
 				105033362A88ED2E00276CF5 /* Utilities */,
 			);
 			path = MuseumTests;
@@ -678,6 +689,7 @@
 				105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */,
 				105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */,
 				105033382A88ED3D00276CF5 /* EntityMaker.swift in Sources */,
+				1050332E2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift in Sources */,
 				105033312A87C68300276CF5 /* MuseumItemsListRouterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
