@@ -8,7 +8,7 @@
 import Foundation
 
 struct ArtObject: Decodable {
-    let id: String
+    let objectNumber: String
     let title: String
     let longTitle: String
     let principalOrFirstMaker: String
@@ -20,10 +20,10 @@ struct ArtObject: Decodable {
 
 extension ArtObject: Hashable {
     func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+        hasher.combine(objectNumber)
     }
 
     static func == (lhs: ArtObject, rhs: ArtObject) -> Bool {
-        lhs.id == rhs.id
+        lhs.objectNumber == rhs.objectNumber
     }
 }
