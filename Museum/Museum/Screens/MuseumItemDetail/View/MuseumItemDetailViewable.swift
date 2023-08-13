@@ -9,6 +9,6 @@ import Foundation
 
 protocol MuseumItemDetailViewable: AnyObject {
     func setItemImageURL(_ url: URL)
-    func setItem(title: String, description: String?)
+    func setItem(title: String, description: String)
     func setImageViewHeightToWeightRatio(_ multiplier: CGFloat)
 }

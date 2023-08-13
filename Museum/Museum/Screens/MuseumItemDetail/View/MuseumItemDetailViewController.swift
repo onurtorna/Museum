@@ -49,7 +49,7 @@ final class MuseumItemDetailViewController: UIViewController {
 // MARK: - MuseumItemsListViewable
 
 extension MuseumItemDetailViewController: MuseumItemDetailViewable {
-    func setItem(title: String, description: String?) {
+    func setItem(title: String, description: String) {
         titleLabel.text = title
         descriptionLabel.text = description
     }
