@@ -21,7 +21,7 @@ final class MuseumItemDetailService: MuseumItemDetailServing {
 
     // MARK: - Internal function
 
-    func getMuseumItemDetial(objectID: String) async -> Result<GetMuseumItemDetailResponse, NetworkError> {
+    func getMuseumItemDetail(objectID: String) async -> Result<GetMuseumItemDetailResponse, NetworkError> {
         let request = GetMuseumItemDetailRequest(objectID: objectID)
         return await networking.request(
             requestable: request,

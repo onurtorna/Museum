@@ -34,7 +34,7 @@ final class MuseumItemDetailInteractor {
 extension MuseumItemDetailInteractor: MuseumItemDetailInteractorInputProtocol {
     func getItemDetail() {
         Task {
-            let result = await service.getMuseumItemDetial(objectID: itemObjectNumber)
+            let result = await service.getMuseumItemDetail(objectID: itemObjectNumber)
             switch result {
             case .success(let response):
                 await output?.gotMuseumItemDetail(response.artObject)

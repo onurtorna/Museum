@@ -8,5 +8,5 @@
 import Networking
 
 protocol MuseumItemDetailServing: AnyObject {
-    func getMuseumItemDetial(objectID: String) async -> Result<GetMuseumItemDetailResponse, NetworkError>
+    func getMuseumItemDetail(objectID: String) async -> Result<GetMuseumItemDetailResponse, NetworkError>
 }
