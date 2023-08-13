@@ -34,5 +34,11 @@ extension MuseumItemDetailPresenter: MuseumItemDetailPresentation {
 // MARK: - MuseumItemDetailInteractorOutputProtocol
 
 extension MuseumItemDetailPresenter: MuseumItemDetailInteractorOutputProtocol {
+    func gotMuseumItemDetail(_ item: ArtObject) {
 
+    }
+
+    func getMuseumItemDetailFailed(errorMessage: String) {
+
+    }
 }
