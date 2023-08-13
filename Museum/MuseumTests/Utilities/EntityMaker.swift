@@ -32,4 +32,8 @@ enum EntityMaker {
     ) -> ImageEntity {
         ImageEntity(url: url, width: 100, height: 100)
     }
+
+    static func makeArtObjectList(itemCount: Int) -> [ArtObject] {
+        Array(repeating: EntityMaker.makeArtObject(), count: itemCount)
+    }
 }

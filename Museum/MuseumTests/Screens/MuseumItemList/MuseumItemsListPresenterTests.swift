@@ -80,7 +80,7 @@ final class MuseumItemsListPresenterTests: XCTestCase {
     func test_pagination_and_view_updates_after_SUT_calls_gotMuseumItems() {
         // Given
         makeSUT()
-        let fetchedItems = makeArtObjectList(itemCount: 10)
+        let fetchedItems = EntityMaker.makeArtObjectList(itemCount: 10)
 
         // When
         sut.gotMuseumItems(items: fetchedItems, totalItemCount: 100)
@@ -192,9 +192,5 @@ extension MuseumItemsListPresenterTests {
             interactor: interactor,
             router: router
         )
-    }
-
-    private func makeArtObjectList(itemCount: Int) -> [ArtObject] {
-        Array(repeating: EntityMaker.makeArtObject(), count: itemCount)
     }
 }
