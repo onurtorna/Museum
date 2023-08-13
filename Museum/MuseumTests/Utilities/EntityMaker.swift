@@ -10,7 +10,7 @@ import Foundation
 
 enum EntityMaker {
     static func makeArtObject(
-        id: String = "",
+        objectNumber: String = "",
         title: String = "",
         longTitle: String = "",
         principalOrFirstMaker: String = "",
@@ -18,7 +18,7 @@ enum EntityMaker {
         webImage: ImageEntity = makeImageEntity()
     ) -> ArtObject {
         ArtObject(
-            id: id,
+            objectNumber: objectNumber,
             title: title,
             longTitle: longTitle,
             principalOrFirstMaker: principalOrFirstMaker,

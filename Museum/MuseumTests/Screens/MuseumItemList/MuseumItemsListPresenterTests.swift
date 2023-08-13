@@ -180,6 +180,21 @@ final class MuseumItemsListPresenterTests: XCTestCase {
         // Then
         XCTAssertFalse(paginationInfo.isPaginationActive)
     }
+
+    func test_router_navigates_to_detail_when_SUT_calls_didTapArtObject() {
+        // Given
+        let artObject = EntityMaker.makeArtObject(objectNumber: "Object Number")
+        makeSUT()
+
+        // When
+        sut.didTapArtObject(artObject)
+
+        // Then
+        XCTAssertEqual(
+            router.navigateToItemDetailParameter,
+            "Object Number"
+        )
+    }
 }
 
 // MARK: - Helpers

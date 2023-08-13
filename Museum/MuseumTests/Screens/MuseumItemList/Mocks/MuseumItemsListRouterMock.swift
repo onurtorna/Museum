@@ -26,4 +26,9 @@ final class MuseumItemsListRouterMock: MuseumItemsListRouting {
     func hideLoadingView() {
         isHideLoadingViewCalled = true
     }
+
+    private(set) var navigateToItemDetailParameter: String?
+    func navigateToItemDetail(objectNumber: String) {
+        navigateToItemDetailParameter = objectNumber
+    }
 }
