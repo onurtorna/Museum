@@ -57,6 +57,7 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     func gotMuseumItems(items: [ArtObject], totalItemCount: Int) {
         router.hideLoadingView()
         paginationInfo.isActivelyFetchingItems = false
+        paginationInfo.incrementPageNumber()
         paginationInfo.setTotalItemsCount(totalItemCount)
         paginationInfo.addShownItems(count: items.count)
         view?.applySnapshot(items: items)
@@ -65,11 +66,12 @@ extension MuseumItemsListPresenter: MuseumItemsListInteractorOutputProtocol {
     @MainActor
     func getMuseumItemsFailed(errorMessage: String) {
         router.hideLoadingView()
+        paginationInfo.isActivelyFetchingItems = false
+
         // Do not show error if there are items shown in the screen
         // Fail silently
         guard !paginationInfo.isPaginationActive else { return }
         view?.showRefreshButton()
-        paginationInfo.isActivelyFetchingItems = false
         router.showError(description: errorMessage) { [weak self] in
             self?.fetchMuseumItems(showLoading: true)
         }
@@ -85,7 +87,6 @@ extension MuseumItemsListPresenter {
             return
         }
         paginationInfo.isPaginationActive = true
-        paginationInfo.incrementPageNumber()
         fetchMuseumItems(showLoading: false)
     }
 }
