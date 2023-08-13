@@ -29,6 +29,8 @@
 		105033332A87C73400276CF5 /* MuseumItemsListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */; };
 		105033352A87C79000276CF5 /* MuseumItemsListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */; };
 		105033382A88ED3D00276CF5 /* EntityMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105033372A88ED3D00276CF5 /* EntityMaker.swift */; };
+		1050333C2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050333B2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift */; };
+		1050333E2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050333D2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift */; };
 		10751D582A82D85D001DB36D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 10751D572A82D85D001DB36D /* Networking */; };
 		10751D5C2A842DC7001DB36D /* MuseumItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */; };
 		10751D5F2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */; };
@@ -93,6 +95,8 @@
 		105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewMock.swift; sourceTree = "<group>"; };
 		105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListInteractorMock.swift; sourceTree = "<group>"; };
 		105033372A88ED3D00276CF5 /* EntityMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityMaker.swift; sourceTree = "<group>"; };
+		1050333B2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListServiceMock.swift; sourceTree = "<group>"; };
+		1050333D2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListPresenterMock.swift; sourceTree = "<group>"; };
 		10751D552A82D678001DB36D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		10751D5B2A842DC7001DB36D /* MuseumItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListViewController.swift; sourceTree = "<group>"; };
 		10751D5E2A842F0E001DB36D /* MuseumItemsListCompositionalLayoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumItemsListCompositionalLayoutMaker.swift; sourceTree = "<group>"; };
@@ -282,7 +286,9 @@
 			isa = PBXGroup;
 			children = (
 				105033342A87C79000276CF5 /* MuseumItemsListInteractorMock.swift */,
+				1050333D2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift */,
 				105033302A87C68300276CF5 /* MuseumItemsListRouterMock.swift */,
+				1050333B2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift */,
 				105033322A87C73400276CF5 /* MuseumItemsListViewMock.swift */,
 			);
 			path = Mocks;
@@ -691,6 +697,8 @@
 				105033382A88ED3D00276CF5 /* EntityMaker.swift in Sources */,
 				1050332E2A87C5B500276CF5 /* MuseumItemsListPresenterTests.swift in Sources */,
 				105033312A87C68300276CF5 /* MuseumItemsListRouterMock.swift in Sources */,
+				1050333E2A88FC2C00276CF5 /* MuseumItemsListPresenterMock.swift in Sources */,
+				1050333C2A88FBE700276CF5 /* MuseumItemsListServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
