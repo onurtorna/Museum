@@ -8,11 +8,15 @@
 import Foundation
 
 /// Encapsulates pagination related variables
-struct Pagination {
+final class Pagination {
 
     // MARK: - Internal variables
 
     private(set) var currentPage = 1
+    // Internal for test purposes
+    private(set) var shownItems = 0
+    // Internal for test purposes
+    private(set) var totalItems = 0
 
     // Prevents pagination to fetch again while actively fetching items
     var isActivelyFetchingItems = false
@@ -24,22 +28,17 @@ struct Pagination {
         shownItems < totalItems
     }
 
-    // MARK: - Private variables
-    
-    private var shownItems = 0
-    private var totalItems = 0
+    // MARK: - Internal functions
 
-    // MARK: - Mutating functions
-
-    mutating func setTotalItemsCount(_ count: Int) {
+    func setTotalItemsCount(_ count: Int) {
         totalItems = count
     }
 
-    mutating func addShownItems(count: Int) {
+    func addShownItems(count: Int) {
         shownItems += count
     }
 
-    mutating func incrementPageNumber() {
+    func incrementPageNumber() {
         currentPage += 1
     }
 }
